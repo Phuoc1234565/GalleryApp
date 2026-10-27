@@ -1,0 +1,1370 @@
+[
+  {
+    "page": 1,
+    "characters": 975,
+    "start": "Trang 1\r\nMã nguồn và giao diện ứng dụng Ảnh GalleryApp\r\nBáo cáo logic xử lý giao diện và kết quả chạ",
+    "end": " dụng, chưa có khóa mật khẩu.\r\nNội dung\r\n1 Logic xử lý\r\n2 Giao diện ứng dụng\r\n3 Kết quả sau khi chạy"
+  },
+  {
+    "page": 2,
+    "characters": 2109,
+    "start": "Trang 2\r\n1 Logic xử lý\r\nThư mục gốc chứa mã Java: app/src/main/java/com/example/appanh. Các Activity",
+    "end": "\r\nimport android.widget.EditText;\r\nimport android.widget.ImageView;\r\nimport android.widget.TextView;"
+  },
+  {
+    "page": 3,
+    "characters": 2273,
+    "start": "Trang 3\r\nimport com.bumptech.glide.Glide;\r\nimport com.google.firebase.auth.FirebaseAuth;\r\nimport com",
+    "end": "g nhập bằng số điện thoại\" : user.isEmailVerified() ? \"Email đã xác minh\" :\r\n\"Email chưa xác minh\");"
+  },
+  {
+    "page": 4,
+    "characters": 1978,
+    "start": "Trang 4\r\n text(R.id.profileSubtitle, value(user.getEmail(), user.getPhoneNumber()));\r\n fill(value(us",
+    "end": "eturn;\r\n subscription = profile.addSnapshotListener(MetadataChanges.INCLUDE, (snapshot,er\r\nror) -> {"
+  },
+  {
+    "page": 5,
+    "characters": 2116,
+    "start": "Trang 5\r\n if (error != null) {\r\n status(\"Không tải được hồ sơ: \" + error.getLocalizedMessage());\r\n r",
+    "end": "\n name.setEnabled(false); bio.setEnabled(false);\r\n findViewById(R.id.saveProfile).setEnabled(false);"
+  },
+  {
+    "page": 6,
+    "characters": 2157,
+    "start": "Trang 6\r\n findViewById(R.id.profileProgress).setVisibility(View.VISIBLE);\r\n status(\"Đang lưu hồ sơ…\"",
+    "end": "\n @Override protected void onDestroy() { handler.removeCallbacks(slowSave);super.onD\r\nestroy(); }\r\n}"
+  },
+  {
+    "page": 7,
+    "characters": 1597,
+    "start": "Trang 7\r\n1 1 2 AlbumActivity\r\nNguồn: app/src/main/java/com/example/appanh/AlbumActivity.java\r\nVai tr",
+    "end": "finish();});click(R.id.google,()->go(GoogleSignInActivity.class));click(R.i\r\nd.forgot,this::reset);}"
+  },
+  {
+    "page": 8,
+    "characters": 3298,
+    "start": "Trang 8\r\nprivate void setBusy(boolean value){busy=value;findViewById(R.id.submit).setEnabled(!v\r\nalu",
+    "end": "y.this,OtpActivity.class).putExtra\r\n(\"verificationId\",id).putExtra(\"phone\",number));}\r\n }).build());"
+  },
+  {
+    "page": 9,
+    "characters": 2058,
+    "start": "Trang 9\r\n}\r\npublic static void saveProfile(FirebaseUser user,String name){\r\n if(user==null)return;\r\n",
+    "end": " wifi.setOnCheckedChangeListener((view,checked)->prefs.edit().putBoolean(\"wifi\",che\r\ncked).apply());"
+  },
+  {
+    "page": 10,
+    "characters": 1931,
+    "start": "Trang 10\r\n status(\"Giao diện minh họa • Chưa kích hoạt sao lưu cloud.\");\r\n click(R.id.backupNow,()->",
+    "end": "ise pre-Android-15 windows\r\n // already inset the content and our listener would add the bars twice."
+  },
+  {
+    "page": 11,
+    "characters": 2474,
+    "start": "Trang 11\r\n WindowCompat.setDecorFitsSystemWindows(getWindow(), false);\r\n boolean dark = (getResource",
+    "end": "ed void onResume() {\r\n super.onResume();\r\n BottomNavigationView nav = findViewById(R.id.navigation);"
+  },
+  {
+    "page": 12,
+    "characters": 2361,
+    "start": "Trang 12\r\n if (nav != null) {\r\n // REORDER_TO_FRONT reuses Activities; restore their own tab when\r\n ",
+    "end": "vity {}\r\n1 1 8 EditPhotoActivity\r\nNguồn: app/src/main/java/com/example/appanh/EditPhotoActivity.java"
+  },
+  {
+    "page": 13,
+    "characters": 2393,
+    "start": "Trang 13\r\nVai trò: Điều phối công cụ cắt, xoay, bộ lọc, sáng và tương phản, vẽ, hoàn tác và lưu bản ",
+    "end": "arStrokes();model.change\r\nd();}});\r\n click(R.id.save,this::save);click(R.id.cancelEdit,this::leave);"
+  },
+  {
+    "page": 14,
+    "characters": 3235,
+    "start": "Trang 14\r\n int[] ratios={R.id.ratioFree,R.id.ratioSquare,R.id.ratioPortrait,R.id.ratioWide};float[] ",
+    "end": "pplyCro\r\np,R.id.save,R.id.resetEditor,R.id.clearDrawing,R.id.brightness,R.id.contrast,R.id.brushWidt"
+  },
+  {
+    "page": 15,
+    "characters": 3113,
+    "start": "Trang 15\r\nh})findViewById(id).setEnabled(enabled);\r\n canvas.setEnabled(enabled);findViewById(R.id.un",
+    "end": "nt!=null)state.putParcelable(\"cropRect\",canvas.cropPixels());super.onSaveInstanceSt\r\nate(state);}\r\n}"
+  },
+  {
+    "page": 16,
+    "characters": 2481,
+    "start": "Trang 16\r\n1 1 9 GalleryActivity\r\nNguồn: app/src/main/java/com/example/appanh/GalleryActivity.java\r\nV",
+    "end": "ckListener(item->{if(item.getItemId()==R.id.\r\ngalleryFilter)filter();else options();return true;});}"
+  },
+  {
+    "page": 17,
+    "characters": 3718,
+    "start": "Trang 17\r\n if(this instanceof AlbumDetailActivity){toolbar.inflateMenu(R.menu.album_actions);for(i\r\n",
+    "end": "ckupActivity.backup(this,repo,false,()->{});},()->{if(!isFinishing()&&!isDestroyed\r\n())render();});}"
+  },
+  {
+    "page": 18,
+    "characters": 3900,
+    "start": "Trang 18\r\nprotected List<Photo> visible(){ArrayList<Photo> list=new ArrayList<>();for(Photo p:rep\r\no",
+    "end": "ce(android.R.\r\ncolor.transparent);window.setGravity(android.view.Gravity.TOP|android.view.Gravity.EN"
+  },
+  {
+    "page": 19,
+    "characters": 4189,
+    "start": "Trang 19\r\nD);window.setLayout((int)(264*getResources().getDisplayMetrics().density),android.view.\r\nW",
+    "end": ");});});}\r\nprivate void saveMembership(List<String> ids,String target,int index,Runnable done){if(in"
+  },
+  {
+    "page": 20,
+    "characters": 3528,
+    "start": "Trang 20\r\ndex>=ids.size()){done.run();return;}Photo p=repo.find(ids.get(index));if(p==null){saveMe\r\n",
+    "end": "if(trash.isEmpty())return;confirm(\"\r\nXóa vĩnh viễn \"+trash.size()+\" mục?\",()->removeNext(trash,0));}"
+  },
+  {
+    "page": 21,
+    "characters": 2859,
+    "start": "Trang 21\r\nprivate void removeNext(List<Photo> list,int i){if(i>=list.size()){render();return;}repo.r",
+    "end": "n = new Handler(Looper.getMainLooper());\r\n private final List<Runnable> waiting = new ArrayList<>();"
+  },
+  {
+    "page": 22,
+    "characters": 1475,
+    "start": "Trang 22\r\n private boolean ready;\r\n private RuntimeException initializationError;\r\n @Override public",
+    "end": "xecutors;\r\n/** Account-scoped local cache; Firestore metadata and Storage originals are separate. */"
+  },
+  {
+    "page": 23,
+    "characters": 2277,
+    "start": "Trang 23\r\npublic final class GalleryRepository {\r\n public interface Result { void done(String error)",
+    "end": "otos\").get().addOnSuccessListener(snapshot -> {\r\n Map<String, Photo> merged = new LinkedHashMap<>();"
+  },
+  {
+    "page": 24,
+    "characters": 2495,
+    "start": "Trang 24\r\n // Retain imports not yet backed up. Synced records removed on another device\r\n // must d",
+    "end": "urrent backu\r\np updates. */\r\n public void appendLocal(Photo photo,Result result){\r\n io.execute(()->{"
+  },
+  {
+    "page": 25,
+    "characters": 2963,
+    "start": "Trang 25\r\n ArrayList<Photo> latestPhotos=new ArrayList<>();ArrayList<Album> latestAlbum\r\ns=new Array",
+    "end": "put(\"fileSize\",p.getFileSize()); data.put(\"width\",p.getWidth()); data.put(\"height\",p\r\n.getHeight());"
+  },
+  {
+    "page": 26,
+    "characters": 2900,
+    "start": "Trang 26\r\n data.put(\"mimeType\",p.getMimeType()); data.put(\"video\",p.isVideo()); data.put(\"favo\r\nrite",
+    "end": "t(cacheError->result.done(error));}\r\n }); }).addOnFailureListener(e -> result.done(e.getMessage()));"
+  },
+  {
+    "page": 27,
+    "characters": 2558,
+    "start": "Trang 27\r\n }\r\n public void remove(Photo p, Result result) {\r\n Runnable removeMetadata = () -> {\r\n Ru",
+    "end": "rofile(Fi\r\nrebaseAuth.getInstance().getCurrentUser(),a.getDisplayName());go(MainActivity.class);fini"
+  },
+  {
+    "page": 28,
+    "characters": 2037,
+    "start": "Trang 28\r\nsh();}else status(t.getException().getLocalizedMessage());});}catch(ApiException e){status",
+    "end": "ữ một mục trong thư viện rồi chọn Ẩn. Nhấn giữ mục tại đây để bỏ ẩn và đưa về thư viện.\r\n\");}\r\n }\r\n}"
+  },
+  {
+    "page": 29,
+    "characters": 2081,
+    "start": "Trang 29\r\n1 1 14 LoginActivity\r\nNguồn: app/src/main/java/com/example/appanh/LoginActivity.java\r\nVai ",
+    "end": "aption,id;\r\n if(item instanceof Photo){Photo p=(Photo)item;image=repo.source(p);id=p.getId();caption"
+  },
+  {
+    "page": 30,
+    "characters": 3356,
+    "start": "Trang 30\r\n=(p.isVideo()?\"▶ Video\":\"\")+(p.isFavorite()?\" ♥\":\"\");if(rows)caption=p.getFileName()+\"\\\r\nn",
+    "end": "1 1 17 NotificationsActivity\r\nNguồn: app/src/main/java/com/example/appanh/NotificationsActivity.java"
+  },
+  {
+    "page": 31,
+    "characters": 3385,
+    "start": "Trang 31\r\nVai trò: Lưu và đọc lịch sử hoạt động cục bộ và Firestore; hỗ trợ đánh dấu đã đọc. Không \r",
+    "end": "n messages.size();\r\n}});}\r\nstatic class Row extends RecyclerView.ViewHolder {Row(View v){super(v);}}"
+  },
+  {
+    "page": 32,
+    "characters": 2182,
+    "start": "Trang 32\r\n}\r\n1 1 18 OtpActivity\r\nNguồn: app/src/main/java/com/example/appanh/OtpActivity.java\r\nVai t",
+    "end": "ox.getText());\r\n ((android.widget.EditText)findViewById(R.id.otp)).setText(code);changingCode=false;"
+  },
+  {
+    "page": 33,
+    "characters": 2523,
+    "start": "Trang 33\r\n }\r\n });\r\n boxes[i].setOnKeyListener((v,key,event)->{if(key==android.view.KeyEvent.KEYCODE",
+    "end": "isF\r\navorite());repo.save(photo,error->{result(error);display();});});click(R.id.edit,()->{if(photo!"
+  },
+  {
+    "page": 34,
+    "characters": 3788,
+    "start": "Trang 34\r\n=null)startActivity(new Intent(this,EditPhotoActivity.class).putExtra(\"photoId\",photo.getI",
+    "end": ".getWindow().setLayout(-\r\n1,(int)(context.getResources().getDisplayMetrics().heightPixels*.85));}\r\n}"
+  },
+  {
+    "page": 35,
+    "characters": 1395,
+    "start": "Trang 35\r\n1 1 20 RegisterActivity\r\nNguồn: app/src/main/java/com/example/appanh/RegisterActivity.java",
+    "end": "e(state);\r\n screen(R.layout.activity_settings);\r\n click(R.id.account,()->go(AccountActivity.class));"
+  },
+  {
+    "page": 36,
+    "characters": 2355,
+    "start": "Trang 36\r\n click(R.id.backup,()->go(BackupActivity.class));\r\n click(R.id.notifications,()->go(Notifi",
+    "end": "h++;\r\nelse{active++;if(photo.getFirebaseUrl()!=null&&!photo.getFirebaseUrl().isEmpty())synced\r\n++;}}"
+  },
+  {
+    "page": 37,
+    "characters": 2034,
+    "start": "Trang 37\r\n detail(R.id.storageDetail,PhotoHelper.formatFileSize(bytes)+\" · \"+repo.photos.size()+\"\r\nm",
+    "end": "xt(value);}\r\n}\r\n1 1 23 ShareActivity\r\nNguồn: app/src/main/java/com/example/appanh/ShareActivity.java"
+  },
+  {
+    "page": 38,
+    "characters": 3135,
+    "start": "Trang 38\r\nVai trò: Chia sẻ file bằng FileProvider và bảng chia sẻ Android. Liên kết chỉ dùng được kh",
+    "end": "ext(context,\"Chưa\r\ncó ứng dụng hỗ trợ định dạng này.\",android.widget.Toast.LENGTH_LONG).show();}}\r\n}"
+  },
+  {
+    "page": 39,
+    "characters": 1734,
+    "start": "Trang 39\r\n1 1 24 SplashActivity\r\nNguồn: app/src/main/java/com/example/appanh/SplashActivity.java\r\nVa",
+    "end": "ng khởi tạo được Firebase. Kiểm tra google-services.json.\"); r\r\neturn; }\r\n action.run();\r\n });\r\n}\r\n}"
+  },
+  {
+    "page": 40,
+    "characters": 1495,
+    "start": "Trang 40\r\n1 1 25 ThemeManager\r\nNguồn: app/src/main/java/com/example/appanh/ThemeManager.java\r\nVai tr",
+    "end": "ty. Số file \r\nJava: 3.\r\nDanh sách: EditorCanvasView.java, EditorDocument.java, EditorViewModel.java."
+  },
+  {
+    "page": 41,
+    "characters": 2429,
+    "start": "Trang 41\r\n1 2 1 EditorCanvasView\r\nNguồn: app/src/main/java/com/example/appanh/editor/EditorCanvasVie",
+    "end": "in(imag\r\ne.getWidth(),rect.right),Math.min(image.getHeight(),rect.bottom));if(crop.width()<1||crop.h"
+  },
+  {
+    "page": 42,
+    "characters": 3291,
+    "start": "Trang 42\r\neight()<1)resetCrop();invalidate();}\r\n public RectF imageBounds(){fit();return new RectF(i",
+    "end": ";paint.setStrokeJoin(Paint.Join.ROUND);}\r\n @Override public boolean onTouchEvent(MotionEvent event){"
+  },
+  {
+    "page": 43,
+    "characters": 2927,
+    "start": "Trang 43\r\n if(!isEnabled()||document==null||mode==Mode.VIEW)return super.onTouchEvent(eve\r\nnt);\r\n fi",
+    "end": "ight,maxHeight);}\r\n crop.set(left?anchorX-width:anchorX,top?anchorY-height:anchorY,left?anchorX:anch"
+  },
+  {
+    "page": 44,
+    "characters": 2169,
+    "start": "Trang 44\r\norX+width,top?anchorY:anchorY+height);\r\n }\r\n private static float clamp(float value,float ",
+    "end": "ghtness=brightness;this.contrast=contrast;this.version=version;}\r\n }\r\n private final State original;"
+  },
+  {
+    "page": 45,
+    "characters": 3038,
+    "start": "Trang 45\r\n private State state;\r\n private int version;\r\n private final Deque<State> undo=new ArrayDe",
+    "end": "\r\n public static ColorMatrixColorFilter effect(State state){\r\n ColorMatrix filter=new ColorMatrix();"
+  },
+  {
+    "page": 46,
+    "characters": 2244,
+    "start": "Trang 46\r\n if(state.filter==1)filter.setSaturation(0);\r\n if(state.filter==2)filter.set(new float[]{.",
+    "end": "FutureTarget;\r\nimport com.example.appanh.GalleryRepository;\r\nimport com.example.appanh.models.Photo;"
+  },
+  {
+    "page": 47,
+    "characters": 2432,
+    "start": "Trang 47\r\nimport java.io.*;\r\nimport java.util.*;\r\nimport java.util.concurrent.Executors;\r\nimport jav",
+    "end": "aveAfter)save();});\r\n }catch(Exception|OutOfMemoryError error){failure(\"Không xử lý được ảnh. Hãy ho"
+  },
+  {
+    "page": 48,
+    "characters": 2165,
+    "start": "Trang 48\r\nàn tác và thử vùng cắt nhỏ hơn.\");}\r\n });\r\n }\r\n public void save(){\r\n if(document==null||b",
+    "end": " báo. \r\nCác Activity hiện tại chủ yếu dùng GalleryRepository, không gọi helper này.\r\nMã nguồn đầy đủ"
+  },
+  {
+    "page": 49,
+    "characters": 1642,
+    "start": "Trang 49\r\npackage com.example.appanh.helpers;\r\nimport android.net.Uri;\r\nimport android.util.Log;\r\nim",
+    "end": "al FirebaseAuth auth;\r\n private final FirebaseFirestore db;\r\n private final FirebaseStorage storage;"
+  },
+  {
+    "page": 50,
+    "characters": 1462,
+    "start": "Trang 50\r\n private static final String USERS_COLLECTION = \"users\";\r\n private static final String PHO",
+    "end": "Ref() {\r\n return db.collection(PHOTOS_COLLECTION);\r\n }\r\n public CollectionReference getAlbumsRef() {"
+  },
+  {
+    "page": 51,
+    "characters": 1326,
+    "start": "Trang 51\r\n return db.collection(ALBUMS_COLLECTION);\r\n }\r\n public CollectionReference getNotification",
+    "end": "rim().isEmpty()) {\r\n if (listener != null) listener.onFailure(\"User ID không hợp lệ\");\r\n return;\r\n }"
+  },
+  {
+    "page": 52,
+    "characters": 1400,
+    "start": "Trang 52\r\n getUsersRef().document(userId)\r\n .get()\r\n .addOnSuccessListener(snapshot -> {\r\n if (snaps",
+    "end": "Photo operations\r\n // ------------------------------------------------------------------------\r\n /**"
+  },
+  {
+    "page": 53,
+    "characters": 1464,
+    "start": "Trang 53\r\n * Saves a new photo or updates an existing photo record in Firestore.\r\n */\r\n public void ",
+    "end": "e(TAG, \"Error getting photos\", e);\r\n if (listener != null) listener.onFailure(e.getMessage());\r\n });"
+  },
+  {
+    "page": 54,
+    "characters": 1336,
+    "start": "Trang 54\r\n }\r\n /**\r\n * Retrieves all photos belonging to a specific album.\r\n */\r\n public void getPho",
+    "end": "mp());\r\n getPhotosRef().document(photoId)\r\n .update(finalUpdates)\r\n .addOnSuccessListener(aVoid -> {"
+  },
+  {
+    "page": 55,
+    "characters": 1389,
+    "start": "Trang 55\r\n if (listener != null) listener.onSuccess();\r\n })\r\n .addOnFailureListener(e -> {\r\n Log.e(T",
+    "end": "shMap<>();\r\n updates.put(\"deleted\", true);\r\n updates.put(\"deletedAt\", FieldValue.serverTimestamp());"
+  },
+  {
+    "page": 56,
+    "characters": 1394,
+    "start": "Trang 56\r\n updates.put(\"updatedAt\", FieldValue.serverTimestamp());\r\n batch.update(photoRef, updates)",
+    "end": "stener.onFailure(e.getMessage());\r\n });\r\n }\r\n /**\r\n * Gets all photos in the trash for a given user."
+  },
+  {
+    "page": 57,
+    "characters": 1361,
+    "start": "Trang 57\r\n */\r\n public void getTrashPhotos(String userId, OnDataListener<List<Photo>> listener) {\r\n ",
+    "end": "etId();\r\n batch.delete(getTrashRef().document(id));\r\n batch.delete(getPhotosRef().document(id));\r\n }"
+  },
+  {
+    "page": 58,
+    "characters": 1388,
+    "start": "Trang 58\r\n batch.commit()\r\n .addOnSuccessListener(aVoid -> {\r\n if (listener != null) listener.onSucc",
+    "end": " if (userId == null) {\r\n if (listener != null) listener.onFailure(\"User ID không hợp lệ\");\r\n return;"
+  },
+  {
+    "page": 59,
+    "characters": 1367,
+    "start": "Trang 59\r\n }\r\n final String cleanQuery = query != null ? query.trim().toLowerCase(Locale.getDefault(",
+    "end": "null || filterType.isEmpty()) {\r\n if (listener != null) listener.onSuccess(allPhotos);\r\n return;\r\n }"
+  },
+  {
+    "page": 60,
+    "characters": 1076,
+    "start": "Trang 60\r\n List<Photo> filtered = new ArrayList<>();\r\n String type = filterType.toLowerCase(Locale.g",
+    "end": "---------------------------------------------\r\n /**\r\n * Creates or saves an album in Firestore.\r\n */"
+  },
+  {
+    "page": 61,
+    "characters": 1349,
+    "start": "Trang 61\r\n public void createAlbum(Album album, OnCompleteListener listener) {\r\n DocumentReference d",
+    "end": "er.onFailure(e.getMessage());\r\n });\r\n }\r\n /**\r\n * Updates specific fields of an album document.\r\n */"
+  },
+  {
+    "page": 62,
+    "characters": 1436,
+    "start": "Trang 62\r\n public void updateAlbum(String albumId, Map<String, Object> updates, OnCompleteLis\r\ntener",
+    "end": "null) {\r\n if (listener != null) listener.onFailure(\"Album ID hoặc Photo ID không hợp lệ\");\r\n return;"
+  },
+  {
+    "page": 63,
+    "characters": 1479,
+    "start": "Trang 63\r\n }\r\n WriteBatch batch = db.batch();\r\n DocumentReference albumRef = getAlbumsRef().document",
+    "end": "ds\", FieldValue.arrayRemove(albumId),\r\n \"updatedAt\", FieldValue.serverTimestamp());\r\n batch.commit()"
+  },
+  {
+    "page": 64,
+    "characters": 1500,
+    "start": "Trang 64\r\n .addOnSuccessListener(aVoid -> {\r\n if (listener != null) listener.onSuccess();\r\n })\r\n .ad",
+    "end": "ficationsRef()\r\n .whereEqualTo(\"userId\", userId)\r\n .get()\r\n .addOnSuccessListener(querySnapshot -> {"
+  },
+  {
+    "page": 65,
+    "characters": 1495,
+    "start": "Trang 65\r\n List<Notification> list = new ArrayList<>();\r\n for (QueryDocumentSnapshot doc : querySnap",
+    "end": "------------------------------\r\n /**\r\n * Uploads a photo to Firebase Storage with progress tracking."
+  },
+  {
+    "page": 66,
+    "characters": 1518,
+    "start": "Trang 66\r\n */\r\n public void uploadPhoto(Uri fileUri, String userId, OnUploadListener listener) {\r\n i",
+    "end": "-\r\n private void sortPhotosByDateDesc(List<Photo> photos) {\r\n Collections.sort(photos, (p1, p2) -> {"
+  },
+  {
+    "page": 67,
+    "characters": 1394,
+    "start": "Trang 67\r\n Date d1 = p1.getDateTaken() != null ? p1.getDateTaken() : p1.getCreatedAt();\r\n Date d2 = ",
+    "end": "ackageManager;\r\nimport android.net.Uri;\r\nimport android.os.Build;\r\nimport android.provider.Settings;"
+  },
+  {
+    "page": 68,
+    "characters": 1502,
+    "start": "Trang 68\r\nimport androidx.core.app.ActivityCompat;\r\nimport androidx.core.content.ContextCompat;\r\nimp",
+    "end": "\n public static boolean hasStoragePermission(Context context) {\r\n if (context == null) return false;"
+  },
+  {
+    "page": 69,
+    "characters": 1622,
+    "start": "Trang 69\r\n String[] permissions = getStoragePermissions();\r\n for (String permission : permissions) {",
+    "end": " is granted (Android 13+).\r\n */\r\n public static boolean hasNotificationPermission(Context context) {"
+  },
+  {
+    "page": 70,
+    "characters": 1581,
+    "start": "Trang 70\r\n if (context == null) return false;\r\n if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIR",
+    "end": "t.add(perm);\r\n }\r\n }\r\n if (!hasCameraPermission(activity)) {\r\n list.add(Manifest.permission.CAMERA);"
+  },
+  {
+    "page": 71,
+    "characters": 1552,
+    "start": "Trang 71\r\n }\r\n if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !hasNot\r\nificationPermis",
+    "end": ");\r\n }\r\n })\r\n .setNegativeButton(\"Hủy\", (dialog, which) -> dialog.dismiss())\r\n .setCancelable(false)"
+  },
+  {
+    "page": 72,
+    "characters": 1498,
+    "start": "Trang 72\r\n .show();\r\n }\r\n /**\r\n * Shows a dialog directing the user to app settings if permission wa",
+    "end": "media.ThumbnailUtils;\r\nimport android.net.Uri;\r\nimport android.os.Build;\r\nimport android.os.Handler;"
+  },
+  {
+    "page": 73,
+    "characters": 1572,
+    "start": "Trang 73\r\nimport android.os.Looper;\r\nimport android.provider.MediaStore;\r\nimport android.util.Log;\r\n",
+    "end": "ic static List<Photo> loadLocalMedia(Context context) {\r\n List<Photo> mediaList = new ArrayList<>();"
+  },
+  {
+    "page": 74,
+    "characters": 1782,
+    "start": "Trang 74\r\n if (context == null) return mediaList;\r\n ContentResolver contentResolver = context.getCon",
+    "end": "t(widthCol);\r\n int height = cursor.getInt(heightCol);\r\n String mimeType = cursor.getString(mimeCol);"
+  },
+  {
+    "page": 75,
+    "characters": 1354,
+    "start": "Trang 75\r\n if (mimeType == null || mimeType.isEmpty()) {\r\n mimeType = \"image/jpeg\";\r\n }\r\n Photo phot",
+    "end": "\n MediaStore.Video.Media.WIDTH,\r\n MediaStore.Video.Media.HEIGHT,\r\n MediaStore.Video.Media.MIME_TYPE,"
+  },
+  {
+    "page": 76,
+    "characters": 1804,
+    "start": "Trang 76\r\n MediaStore.Video.Media.DURATION,\r\n MediaStore.Video.Media.DATE_TAKEN,\r\n MediaStore.Video.",
+    "end": "eo.setFilePath(path);\r\n video.setFileSize(size);\r\n video.setWidth(width);\r\n video.setHeight(height);"
+  },
+  {
+    "page": 77,
+    "characters": 1314,
+    "start": "Trang 77\r\n video.setMimeType(mimeType);\r\n video.setVideo(true);\r\n video.setDuration(duration);\r\n lon",
+    "end": "tener listen\r\ner) {\r\n EXECUTOR.execute(() -> {\r\n try {\r\n List<Photo> list = loadLocalMedia(context);"
+  },
+  {
+    "page": 78,
+    "characters": 1797,
+    "start": "Trang 78\r\n MAIN_HANDLER.post(() -> {\r\n if (listener != null) listener.onMediaLoaded(list);\r\n });\r\n }",
+    "end": "g length = exif.getAttribute(ExifInterface.TAG_IMAGE_LENGTH);\r\n if (make != null || model != null) {"
+  },
+  {
+    "page": 79,
+    "characters": 1394,
+    "start": "Trang 79\r\n String device = (make != null ? make : \"\") + \" \" + (model != null ? model : \"\");\r\n detail",
+    "end": "ude} or null if not available.\r\n */\r\n public static float[] getExifGpsCoordinates(String filePath) {"
+  },
+  {
+    "page": 80,
+    "characters": 1469,
+    "start": "Trang 80\r\n ExifInterface exif = getExifData(filePath);\r\n if (exif == null) return null;\r\n float[] la",
+    "end": "filePath, e);\r\n return null;\r\n }\r\n }\r\n /**\r\n * Generates a thumbnail Bitmap from a Content URI.\r\n */"
+  },
+  {
+    "page": 81,
+    "characters": 1776,
+    "start": "Trang 81\r\n public static Bitmap generateThumbnail(Context context, Uri uri, int width, int height) {",
+    "end": "te to dd/MM/yyyy.\r\n */\r\n public static String formatDate(Date date) {\r\n if (date == null) return \"\";"
+  },
+  {
+    "page": 82,
+    "characters": 1315,
+    "start": "Trang 82\r\n SimpleDateFormat sdf = new SimpleDateFormat(\"dd/MM/yyyy\", Locale.getDefault())\r\n;\r\n retur",
+    "end": "ate == null) return \"\";\r\n long now = System.currentTimeMillis();\r\n long diff = now - date.getTime();"
+  },
+  {
+    "page": 83,
+    "characters": 1553,
+    "start": "Trang 83\r\n if (diff < 60 * 1000) {\r\n return \"Vừa xong\";\r\n } else if (diff < 60 * 60 * 1000) {\r\n long",
+    "end": "tions.outWidth, options.outHeight};\r\n }\r\n /**\r\n * Returns dimensions of an image from a Content URI."
+  },
+  {
+    "page": 84,
+    "characters": 1601,
+    "start": "Trang 84\r\n */\r\n public static int[] getImageDimensions(Context context, Uri uri) {\r\n if (context == ",
+    "end": "aos.toByteArray();\r\n }\r\n /**\r\n * Compresses an image file and saves the result to a cache file.\r\n */"
+  },
+  {
+    "page": 85,
+    "characters": 1506,
+    "start": "Trang 85\r\n public static File compressImageToFile(Context context, String sourcePath, int quality) {",
+    "end": "inSampleSize;\r\n }\r\n private static Bitmap rotateBitmapIfRequired(Bitmap img, String selectedImage) {"
+  },
+  {
+    "page": 86,
+    "characters": 1311,
+    "start": "Trang 86\r\n if (img == null || selectedImage == null) return img;\r\n try {\r\n ExifInterface ei = new Ex",
+    "end": "/Album.java\r\nVai trò: Mô hình album: mã, chủ sở hữu, tên, ảnh bìa và mốc thời gian.\r\nMã nguồn đầy đủ"
+  },
+  {
+    "page": 87,
+    "characters": 1112,
+    "start": "Trang 87\r\npackage com.example.appanh.models;\r\nimport com.google.firebase.firestore.DocumentId;\r\nimpo",
+    "end": "unt = 0;\r\n this.photoIds = new ArrayList<>();\r\n }\r\n // Getters and Setters\r\n public String getId() {"
+  },
+  {
+    "page": 88,
+    "characters": 838,
+    "start": "Trang 88\r\n return id;\r\n }\r\n public void setId(String id) {\r\n this.id = id;\r\n }\r\n public String getUs",
+    "end": "h) {\r\n this.coverPhotoPath = coverPhotoPath;\r\n }\r\n public int getPhotoCount() {\r\n return photoCount;"
+  },
+  {
+    "page": 89,
+    "characters": 954,
+    "start": "Trang 89\r\n }\r\n public void setPhotoCount(int photoCount) {\r\n this.photoCount = photoCount;\r\n }\r\n pub",
+    "end": "!= o.getClass()) return false;\r\n Album album = (Album) o;\r\n return Objects.equals(id, album.id);\r\n }"
+  },
+  {
+    "page": 90,
+    "characters": 1084,
+    "start": "Trang 90\r\n @Override\r\n public int hashCode() {\r\n return Objects.hash(id);\r\n }\r\n @Override\r\n public S",
+    "end": " private boolean isRead;\r\n private String thumbnailUrl;\r\n @ServerTimestamp\r\n private Date createdAt;"
+  },
+  {
+    "page": 91,
+    "characters": 801,
+    "start": "Trang 91\r\n // Empty constructor for Firestore\r\n public Notification() {}\r\n public Notification(Strin",
+    "end": "ssage(String message) {\r\n this.message = message;\r\n }\r\n public String getType() {\r\n return type;\r\n }"
+  },
+  {
+    "page": 92,
+    "characters": 941,
+    "start": "Trang 92\r\n public void setType(String type) {\r\n this.type = type;\r\n }\r\n public boolean isRead() {\r\n ",
+    "end": " '\\'' +\r\n \", userId='\" + userId + '\\'' +\r\n \", title='\" + title + '\\'' +\r\n \", type='\" + type + '\\'' +"
+  },
+  {
+    "page": 93,
+    "characters": 1219,
+    "start": "Trang 93\r\n \", isRead=\" + isRead +\r\n '}';\r\n }\r\n}\r\n1 4 3 Photo\r\nNguồn: app/src/main/java/com/example/a",
+    "end": " isFavorite;\r\n private boolean isDeleted;\r\n private boolean hidden;\r\n private List<String> albumIds;"
+  },
+  {
+    "page": 94,
+    "characters": 1005,
+    "start": "Trang 94\r\n @ServerTimestamp\r\n private Date createdAt;\r\n @ServerTimestamp\r\n private Date updatedAt;\r\n",
+    "end": "erId(String userId) {\r\n this.userId = userId;\r\n }\r\n public String getFileName() {\r\n return fileName;"
+  },
+  {
+    "page": 95,
+    "characters": 817,
+    "start": "Trang 95\r\n }\r\n public void setFileName(String fileName) {\r\n this.fileName = fileName;\r\n }\r\n public S",
+    "end": "void setWidth(int width) {\r\n this.width = width;\r\n }\r\n public int getHeight() {\r\n return height;\r\n }"
+  },
+  {
+    "page": 96,
+    "characters": 848,
+    "start": "Trang 96\r\n public void setHeight(int height) {\r\n this.height = height;\r\n }\r\n public String getMimeTy",
+    "end": "location) {\r\n this.location = location;\r\n }\r\n public boolean isFavorite() {\r\n return isFavorite;\r\n }"
+  },
+  {
+    "page": 97,
+    "characters": 965,
+    "start": "Trang 97\r\n public void setFavorite(boolean favorite) {\r\n isFavorite = favorite;\r\n }\r\n public boolean",
+    "end": "{\r\n return deletedAt;\r\n }\r\n public void setDeletedAt(Date deletedAt) {\r\n this.deletedAt = deletedAt;"
+  },
+  {
+    "page": 98,
+    "characters": 1062,
+    "start": "Trang 98\r\n }\r\n public Date getDateTaken() {\r\n return dateTaken;\r\n }\r\n public void setDateTaken(Date ",
+    "end": "ort com.google.firebase.firestore.DocumentId;\r\nimport com.google.firebase.firestore.ServerTimestamp;"
+  },
+  {
+    "page": 99,
+    "characters": 1205,
+    "start": "Trang 99\r\nimport java.io.Serializable;\r\nimport java.util.Date;\r\nimport java.util.Objects;\r\n/**\r\n* Mo",
+    "end": "guage = \"vi\";\r\n this.sortOrder = \"date_desc\";\r\n }\r\n // Getters and Setters\r\n public String getId() {"
+  },
+  {
+    "page": 100,
+    "characters": 838,
+    "start": "Trang 100\r\n return id;\r\n }\r\n public void setId(String id) {\r\n this.id = id;\r\n }\r\n public String getE",
+    "end": "erified) {\r\n isEmailVerified = emailVerified;\r\n }\r\n public String getProvider() {\r\n return provider;"
+  },
+  {
+    "page": 101,
+    "characters": 872,
+    "start": "Trang 101\r\n }\r\n public void setProvider(String provider) {\r\n this.provider = provider;\r\n }\r\n public ",
+    "end": "language) {\r\n this.language = language;\r\n }\r\n public String getSortOrder() {\r\n return sortOrder;\r\n }"
+  },
+  {
+    "page": 102,
+    "characters": 885,
+    "start": "Trang 102\r\n public void setSortOrder(String sortOrder) {\r\n this.sortOrder = sortOrder;\r\n }\r\n public ",
+    "end": "layName + '\\'' +\r\n \", provider='\" + provider + '\\'' +\r\n \", autoBackup=\" + autoBackup +\r\n '}';\r\n }\r\n}"
+  },
+  {
+    "page": 103,
+    "characters": 1903,
+    "start": "Trang 103\r\n2 Giao diện ứng dụng\r\nNguồn giao diện nằm trong app/src/main/res. Layout XML mô tả vị trí",
+    "end": "oid:name=\"android.support.FILE_PROVIDER_PATHS\" android:re\r\nsource=\"@xml/file_paths\" />\r\n </provider>"
+  },
+  {
+    "page": 104,
+    "characters": 1525,
+    "start": "Trang 104\r\n <activity android:name=\".AccountActivity\" android:exported=\"false\" android:window\r\nSoftI",
+    "end": "se\"\r\n android:theme=\"@style/Theme.AppẢnh.Fullscreen\" />\r\n <!-- Screen 10: Edit Photo -->\r\n <activity"
+  },
+  {
+    "page": 105,
+    "characters": 1114,
+    "start": "Trang 105\r\n android:name=\".EditPhotoActivity\"\r\n android:exported=\"false\"\r\n android:windowSoftInputMo",
+    "end": "droid:exported=\"false\"\r\n android:theme=\"@style/Theme.AppẢnh.Dialog\" />\r\n </application>\r\n</manifest>"
+  },
+  {
+    "page": 106,
+    "characters": 2316,
+    "start": "Trang 106\r\n2 2 Thư mục layout\r\nĐường dẫn: app/src/main/res/layout\r\nBố cục màn hình, các sheet, hộp t",
+    "end": "ut_height=\"match_parent\"\r\n android:background=\"@drawable/bg_circle_icon\" android:gravity=\"center\" an"
+  },
+  {
+    "page": 107,
+    "characters": 2636,
+    "start": "Trang 107\r\ndroid:text=\"Ả\"\r\n android:textColor=\"@color/primary\" android:textSize=\"32sp\" android:fontF",
+    "end": "layout_marginTop=\"16dp\"\r\n android:hint=\"Giới thiệu về bạn\" app:counterEnabled=\"true\" app:counterMaxL"
+  },
+  {
+    "page": 108,
+    "characters": 2683,
+    "start": "Trang 108\r\nength=\"240\">\r\n <com.google.android.material.textfield.TextInputEditText android:id=\"@+id/",
+    "end": "li\r\nneSpacingExtra=\"3dp\"\r\n android:paddingVertical=\"16dp\" android:accessibilityLiveRegion=\"polite\"/>"
+  },
+  {
+    "page": 109,
+    "characters": 2683,
+    "start": "Trang 109\r\n <ProgressBar android:id=\"@+id/profileProgress\" android:layout_width=\"28dp\" a\r\nndroid:lay",
+    "end": "\n </LinearLayout>\r\n <com.google.android.material.bottomnavigation.BottomNavigationView android:id=\"@"
+  },
+  {
+    "page": 110,
+    "characters": 2449,
+    "start": "Trang 110\r\n+id/navigation\" android:layout_width=\"match_parent\" android:layout_height=\"68dp\" andro\r\ni",
+    "end": "ayout_height=\"match_parent\" android:orientation=\"vertical\" an\r\ndroid:background=\"@color/background\">"
+  },
+  {
+    "page": 111,
+    "characters": 3072,
+    "start": "Trang 111\r\n <com.google.android.material.appbar.MaterialToolbar android:id=\"@+id/toolbar\" androi\r\nd:",
+    "end": "LinearLayout>\r\n2 2 5 activity_create_album\r\nNguồn: app/src/main/res/layout/activity_create_album.xml"
+  },
+  {
+    "page": 112,
+    "characters": 2764,
+    "start": "Trang 112\r\nVai trò: Nhập tên và chọn ảnh cho album mới.\r\nMã nguồn đầy đủ\r\n<?xml version=\"1.0\" ?>\r\n<L",
+    "end": "ếu giao diện tối; trang Ảnh thực tế dùng activity_main với tài \r\nnguyên theo theme.\r\nMã nguồn đầy đủ"
+  },
+  {
+    "page": 113,
+    "characters": 3647,
+    "start": "Trang 113\r\n<?xml version=\"1.0\" ?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/a",
+    "end": " app:checkedIconVisible=\"false\" app:chipCo\r\nrnerRadius=\"18dp\" app:ensureMinTouchTargetSize=\"false\"/>"
+  },
+  {
+    "page": 114,
+    "characters": 3149,
+    "start": "Trang 114\r\n <com.google.android.material.chip.Chip android:id=\"@+id/favorites\" android:layou\r\nt_widt",
+    "end": "ryNavigationText\" app:ite\r\nmTextAppearanceInactive=\"@style/GalleryNavigationText\"/>\r\n</LinearLayout>"
+  },
+  {
+    "page": 115,
+    "characters": 3190,
+    "start": "Trang 115\r\n2 2 7 activity_edit_photo\r\nNguồn: app/src/main/res/layout/activity_edit_photo.xml\r\nVai tr",
+    "end": "ter\" style=\"\r\n@style/TextButton\" android:layout_width=\"0dp\" android:layout_weight=\"1\" android:layout"
+  },
+  {
+    "page": 116,
+    "characters": 3569,
+    "start": "Trang 116\r\n_height=\"60dp\" android:text=\"Bộ lọc\" android:textSize=\"12sp\" android:paddingHorizontal\r\n=",
+    "end": "=\"Áp dụng cắt\" android:textSize=\"13sp\" android:lett\r\nerSpacing=\"0\" android:paddingHorizontal=\"4dp\"/>"
+  },
+  {
+    "page": 117,
+    "characters": 2991,
+    "start": "Trang 117\r\n </LinearLayout>\r\n </LinearLayout>\r\n <HorizontalScrollView android:id=\"@+id/filterPanel\" ",
+    "end": "visibility=\"go\r\nne\">\r\n <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"44dp"
+  },
+  {
+    "page": 118,
+    "characters": 3702,
+    "start": "Trang 118\r\n\" android:orientation=\"horizontal\" android:gravity=\"center\">\r\n <com.google.android.materi",
+    "end": "ingHorizontal=\"20dp\" a\r\nndroid:layout_marginTop=\"4dp\" android:maxLines=\"2\" android:ellipsize=\"end\"/>"
+  },
+  {
+    "page": 119,
+    "characters": 3008,
+    "start": "Trang 119\r\n <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"64dp\" and\r\nroid",
+    "end": "r=\"?android:attr/textColorPrimary\" android:paddingVertical=\"8\r\ndp\" android:fontFamily=\"sans-serif\"/>"
+  },
+  {
+    "page": 120,
+    "characters": 2789,
+    "start": "Trang 120\r\n <com.google.android.material.button.MaterialButton android:id=\"@+id/google\" s\r\ntyle=\"@st",
+    "end": "rtIconTint=\"@color/text_secondary\" app:endIconMode=\"none\" app:en\r\ndIconTint=\"@color/text_secondary\">"
+  },
+  {
+    "page": 121,
+    "characters": 3615,
+    "start": "Trang 121\r\n <com.google.android.material.textfield.TextInputEditText android:id=\"@+id/ema\r\nil\" andro",
+    "end": "xt_secondary\"\r\nandroid:fontFamily=\"sans-serif\" android:id=\"@+id/status\" android:layout_marginTop=\"12"
+  },
+  {
+    "page": 122,
+    "characters": 2940,
+    "start": "Trang 122\r\ndp\" android:visibility=\"gone\" android:accessibilityLiveRegion=\"polite\"/>\r\n <Space android",
+    "end": "gleLine=\"f\r\nalse\" app:singleSelection=\"true\" app:selectionRequired=\"true\" app:chipSpacingHorizontal="
+  },
+  {
+    "page": 123,
+    "characters": 3638,
+    "start": "Trang 123\r\n\"6dp\">\r\n <com.google.android.material.chip.Chip android:id=\"@+id/all\" android:layout_widt",
+    "end": "\n-serif\" android:gravity=\"center\" android:layout_marginTop=\"10dp\" android:lineSpacingExt\r\nra=\"4dp\"/>"
+  },
+  {
+    "page": 124,
+    "characters": 2999,
+    "start": "Trang 124\r\n </LinearLayout>\r\n <com.google.android.material.floatingactionbutton.FloatingActionButton",
+    "end": "markRead\" sty\r\nle=\"@style/OutlinedButton\" android:layout_width=\"match_parent\" android:layout_height="
+  },
+  {
+    "page": 125,
+    "characters": 3087,
+    "start": "Trang 125\r\n\"56dp\" android:layout_marginTop=\"8dp\" android:text=\"Đánh dấu tất cả đã đọc\" android:let\r\n",
+    "end": "scription=\"Chữ số 2\"/>\r\n <EditText android:id=\"@+id/otp3\" android:layout_width=\"0dp\" android:layout_"
+  },
+  {
+    "page": 126,
+    "characters": 3143,
+    "start": "Trang 126\r\nweight=\"1\" android:layout_height=\"58dp\" android:layout_marginHorizontal=\"3dp\" android\r\n:b",
+    "end": "layout_wid\r\nth=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\" an"
+  },
+  {
+    "page": 127,
+    "characters": 3338,
+    "start": "Trang 127\r\ndroid:background=\"@color/viewer_background\">\r\n <FrameLayout android:layout_width=\"match_p",
+    "end": "ut>\r\n</LinearLayout>\r\n2 2 14 activity_register\r\nNguồn: app/src/main/res/layout/activity_register.xml"
+  },
+  {
+    "page": 128,
+    "characters": 3400,
+    "start": "Trang 128\r\nVai trò: Biểu mẫu tạo tài khoản và chuyển về đăng nhập.\r\nMã nguồn đầy đủ\r\n<?xml version=\"",
+    "end": "\" android:singleLine=\"true\" android:inputType=\"textEmailAddress\" an\r\ndroid:imeOptions=\"actionNext\"/>"
+  },
+  {
+    "page": 129,
+    "characters": 3623,
+    "start": "Trang 129\r\n </com.google.android.material.textfield.TextInputLayout>\r\n <com.google.android.material.",
+    "end": "ut_height=\r\n\"52dp\" android:text=\"Đã có tài khoản? Đăng nhập\" android:letterSpacing=\"0\" android:textS"
+  },
+  {
+    "page": 130,
+    "characters": 2891,
+    "start": "Trang 130\r\nize=\"16sp\" android:layout_marginTop=\"32dp\"/>\r\n </LinearLayout>\r\n </androidx.core.widget.N",
+    "end": "lor=\"@color/fi\r\neld_border\" app:chipStrokeWidth=\"1dp\" app:checkedIconVisible=\"false\" app:chipCornerR"
+  },
+  {
+    "page": 131,
+    "characters": 3618,
+    "start": "Trang 131\r\nadius=\"18dp\" app:ensureMinTouchTargetSize=\"false\"/>\r\n <com.google.android.material.chip.C",
+    "end": " </LinearLayout>\r\n <com.google.android.material.floatingactionbutton.FloatingActionButton android:id"
+  },
+  {
+    "page": 132,
+    "characters": 2935,
+    "start": "Trang 132\r\n=\"@+id/importMedia\" android:layout_width=\"wrap_content\" android:layout_height=\"wrap\r\n_con",
+    "end": "\" android:orientation=\"vertical\" android:layout_marginStart=\"\r\n16dp\" android:layout_marginEnd=\"8dp\">"
+  },
+  {
+    "page": 133,
+    "characters": 3231,
+    "start": "Trang 133\r\n <TextView android:layout_width=\"match_parent\" android:layout_height=\"wra\r\np_content\" and",
+    "end": "d:layout_marginEnd=\"8dp\">\r\n <TextView android:layout_width=\"match_parent\" android:layout_height=\"wra"
+  },
+  {
+    "page": 134,
+    "characters": 3271,
+    "start": "Trang 134\r\np_content\" android:text=\"Dung lượng lưu trữ\" android:textSize=\"15sp\" android:textColor=\"\r",
+    "end": "height=\"wra\r\np_content\" android:text=\"Giao diện\" android:textSize=\"15sp\" android:textColor=\"@color/t"
+  },
+  {
+    "page": 135,
+    "characters": 3210,
+    "start": "Trang 135\r\next_primary\" android:fontFamily=\"sans-serif\"/>\r\n <TextView android:layout_width=\"match_pa",
+    "end": "\" android:l\r\nayout_height=\"wrap_content\" android:orientation=\"vertical\" android:layout_marginStart=\""
+  },
+  {
+    "page": 136,
+    "characters": 3246,
+    "start": "Trang 136\r\n16dp\" android:layout_marginEnd=\"8dp\">\r\n <TextView android:layout_width=\"match_parent\" and",
+    "end": "\"22dp\" androi\r\nd:src=\"@drawable/ic_about\" app:tint=\"@color/text_primary\" android:importantForAccessi"
+  },
+  {
+    "page": 137,
+    "characters": 3088,
+    "start": "Trang 137\r\nbility=\"no\"/>\r\n <LinearLayout android:layout_width=\"0dp\" android:layout_weight=\"1\" androi",
+    "end": "if\"/>\r\n </LinearLayout>\r\n <ImageView android:layout_width=\"18dp\" android:layout_height=\"18dp\" androi"
+  },
+  {
+    "page": 138,
+    "characters": 2944,
+    "start": "Trang 138\r\nd:src=\"@drawable/ic_chevron_right\" app:tint=\"@color/text_hint\" android:importantForAcc\r\ne",
+    "end": "m\" android:layout_\r\nmarginTop=\"12dp\" app:layout_constraintTop_toBottomOf=\"@id/welcomeLogo\" app:layou"
+  },
+  {
+    "page": 139,
+    "characters": 3192,
+    "start": "Trang 139\r\nt_constraintStart_toStartOf=\"parent\" app:layout_constraintEnd_toEndOf=\"parent\"/>\r\n <TextV",
+    "end": "extSize=\"1\r\n4sp\" android:textColor=\"?android:attr/textColorPrimary\" android:paddingVertical=\"8dp\" an"
+  },
+  {
+    "page": 140,
+    "characters": 2787,
+    "start": "Trang 140\r\ndroid:fontFamily=\"sans-serif\"/>\r\n <TextView android:layout_width=\"match_parent\" android:l",
+    "end": "d:l\r\nayout_height=\"wrap_content\" android:layout_marginStart=\"16dp\" android:orientation=\"ver\r\ntical\">"
+  },
+  {
+    "page": 141,
+    "characters": 3015,
+    "start": "Trang 141\r\n <TextView android:layout_width=\"match_parent\" android:layout_height=\"wra\r\np_content\" and",
+    "end": "iption=\r\n\"Thiết bị\"/>\r\n <LinearLayout android:layout_width=\"0dp\" android:layout_weight=\"1\" android:l"
+  },
+  {
+    "page": 142,
+    "characters": 2483,
+    "start": "Trang 142\r\nayout_height=\"wrap_content\" android:layout_marginStart=\"16dp\" android:orientation=\"ver\r\nt",
+    "end": "hemas.andr\r\noid.com/apk/res/android\" xmlns:app=\"http://schemas.android.com/apk/res-auto\" android:lay"
+  },
+  {
+    "page": 143,
+    "characters": 2848,
+    "start": "Trang 143\r\nout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_margin=\r\n\"5d",
+    "end": " android:layo\r\nut_height=\"0dp\" android:scaleType=\"centerCrop\" android:contentDescription=\"Ảnh\" app:l"
+  },
+  {
+    "page": 144,
+    "characters": 2770,
+    "start": "Trang 144\r\nayout_constraintDimensionRatio=\"1:1\" app:layout_constraintTop_toTopOf=\"parent\" app:la\r\nyo",
+    "end": "oid:gravity=\"center\" android:inclu\r\ndeFontPadding=\"false\" android:elevation=\"2dp\"/>\r\n</LinearLayout>"
+  },
+  {
+    "page": 145,
+    "characters": 2777,
+    "start": "Trang 145\r\n2 2 23 item_notification\r\nNguồn: app/src/main/res/layout/item_notification.xml\r\nVai trò: ",
+    "end": "sibility=\"visible\"/>\r\n <TextView android:id=\"@+id/textViewVideoDuration\" android:layout_width=\"wrap_"
+  },
+  {
+    "page": 146,
+    "characters": 2892,
+    "start": "Trang 146\r\ncontent\" android:layout_height=\"wrap_content\" android:layout_marginStart=\"8dp\" android:\r\n",
+    "end": "wable/ic_delete\" android:textColor=\"@col\r\nor/danger\" app:iconTint=\"@color/danger\"/>\r\n</LinearLayout>"
+  },
+  {
+    "page": 147,
+    "characters": 2616,
+    "start": "Trang 147\r\n2 2 26 sheet_filter\r\nNguồn: app/src/main/res/layout/sheet_filter.xml\r\nVai trò: Các cách s",
+    "end": "sion=\"1.0\" ?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" xmlns:app=\"h"
+  },
+  {
+    "page": 148,
+    "characters": 3051,
+    "start": "Trang 148\r\nttp://schemas.android.com/apk/res-auto\" android:id=\"@+id/screenRoot\" android:layout_wid\r\n",
+    "end": "layout_wid\r\nth=\"match_parent\" android:layout_height=\"wrap_content\" android:orientation=\"vertical\" an"
+  },
+  {
+    "page": 149,
+    "characters": 2983,
+    "start": "Trang 149\r\ndroid:background=\"@drawable/bg_bottom_sheet\" android:padding=\"8dp\">\r\n <View android:layou",
+    "end": "sion=\"1.0\" ?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" xmlns:app=\"h"
+  },
+  {
+    "page": 150,
+    "characters": 2593,
+    "start": "Trang 150\r\nttp://schemas.android.com/apk/res-auto\" android:id=\"@+id/screenRoot\" android:layout_wid\r\n",
+    "end": "m/apk/res-auto\">\r\n <item android:id=\"@+id/addPhotos\" android:title=\"Thêm ảnh\" android:icon=\"@drawabl"
+  },
+  {
+    "page": 151,
+    "characters": 1407,
+    "start": "Trang 151\r\ne/ic_add\" app:showAsAction=\"always\"/>\r\n <item android:id=\"@+id/albumOptions\" android:titl",
+    "end": "oid:id=\"@+id/nav_photos\"\r\n android:icon=\"@drawable/ic_photo\"\r\n android:title=\"@string/nav_photos\" />"
+  },
+  {
+    "page": 152,
+    "characters": 1418,
+    "start": "Trang 152\r\n <item\r\n android:id=\"@+id/nav_albums\"\r\n android:icon=\"@drawable/ic_album\"\r\n android:title",
+    "end": "+id/context_delete\"\r\n android:icon=\"@drawable/ic_delete\"\r\n android:title=\"@string/context_delete\" />"
+  },
+  {
+    "page": 153,
+    "characters": 1493,
+    "start": "Trang 153\r\n</menu>\r\n2 3 5 gallery_actions\r\nNguồn: app/src/main/res/menu/gallery_actions.xml\r\nVai trò",
+    "end": "Action=\"never\" />\r\n <item\r\n android:id=\"@+id/menu_backup\"\r\n android:icon=\"@drawable/ic_cloud_upload\""
+  },
+  {
+    "page": 154,
+    "characters": 1603,
+    "start": "Trang 154\r\n android:title=\"@string/menu_backup\"\r\n app:showAsAction=\"never\" />\r\n <item\r\n android:id=\"",
+    "end": "</color>\r\n <color name=\"tab_selected\">#2864FF</color>\r\n <color name=\"tab_unselected\">#9CA3AF</color>"
+  },
+  {
+    "page": 155,
+    "characters": 1814,
+    "start": "Trang 155\r\n <color name=\"tab_indicator\">#2864FF</color>\r\n <color name=\"chip_selected_bg\">#E8F0FE</co",
+    "end": "\"text_xl\">18sp</dimen>\r\n <dimen name=\"text_xxl\">24sp</dimen>\r\n <dimen name=\"text_title\">28sp</dimen>"
+  },
+  {
+    "page": 156,
+    "characters": 1532,
+    "start": "Trang 156\r\n <dimen name=\"text_splash\">48sp</dimen>\r\n \r\n <dimen name=\"corner_radius_sm\">8dp</dimen>\r\n",
+    "end": "=\"menu_backup\">Sao lưu</string>\r\n <string name=\"menu_help\">Trợ giúp</string>\r\n <!-- Context Menu -->"
+  },
+  {
+    "page": 157,
+    "characters": 1938,
+    "start": "Trang 157\r\n <string name=\"context_view_detail\">Xem chi tiết</string>\r\n <string name=\"context_add_to_",
+    "end": "bum_detail_title\">Album chi tiết</string>\r\n <string name=\"album_select_multiple\">Chọn nhiều</string>"
+  },
+  {
+    "page": 158,
+    "characters": 1609,
+    "start": "Trang 158\r\n <string name=\"album_add_photo\">Thêm ảnh</string>\r\n <string name=\"album_rename\">Đổi tên</",
+    "end": "pplication theme -->\r\n <style name=\"Base.Theme.AppẢnh\" parent=\"Theme.Material3.DayNight.NoActionBar\""
+  },
+  {
+    "page": 159,
+    "characters": 2388,
+    "start": "Trang 159\r\n>\r\n <item name=\"colorPrimary\">@color/primary</item>\r\n <item name=\"colorPrimaryDark\">@colo",
+    "end": ".Dialog\" parent=\"Theme.Material3.DayNight.Dialog\">\r\n <item name=\"colorPrimary\">@color/primary</item>"
+  },
+  {
+    "page": 160,
+    "characters": 1948,
+    "start": "Trang 160\r\n </style>\r\n \r\n <!-- Custom Button Style -->\r\n <style name=\"PrimaryButton\" parent=\"Widget.",
+    "end": "led\">\r\n <item name=\"cardCornerRadius\">12dp</item>\r\n <item name=\"cardElevation\">0dp</item>\r\n </style>"
+  },
+  {
+    "page": 161,
+    "characters": 1729,
+    "start": "Trang 161\r\n \r\n <!-- Bottom Sheet Style -->\r\n <style name=\"CustomBottomSheet\" parent=\"Widget.Material",
+    "end": "\"android:insetTop\">0dp</item>\r\n <item name=\"android:insetBottom\">0dp</item>\r\n </style>\r\n</resources>"
+  },
+  {
+    "page": 162,
+    "characters": 2040,
+    "start": "Trang 162\r\n2 5 Thư mục values night\r\nĐường dẫn: app/src/main/res/values-night\r\nMàu, theme và giá trị",
+    "end": ", theme và giá trị thay thế trong chế độ tối. Tên tài nguyên: themes.\r\nMã nguồn đầy đủ\r\n<resources/>"
+  },
+  {
+    "page": 163,
+    "characters": 1455,
+    "start": "Trang 163\r\n2 6 Thư mục values v31\r\nĐường dẫn: app/src/main/res/values-v31\r\nThiết lập theme dành cho ",
+    "end": "ed=\"true\" android:color=\"@color/button_primary\"/><item android:color=\"@color/s\r\nurface\"/></selector>"
+  },
+  {
+    "page": 164,
+    "characters": 1749,
+    "start": "Trang 164\r\n2 7 2 chip_text\r\nNguồn: app/src/main/res/color/chip_text.xml\r\nVai trò: Màu có trạng thái ",
+    "end": "ion_item.xml, \r\nbg_otp_box.xml, bg_photo_overlay.xml, bg_rounded_primary.xml, bg_rounded_white.xml, "
+  },
+  {
+    "page": 165,
+    "characters": 2388,
+    "start": "Trang 165\r\nbg_search_bar.xml, bg_selection_number.xml, bg_settings_item.xml, bg_settings_row.xml, \r\n",
+    "end": "or icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nart_splash.\r\nMã nguồn đầy đủ"
+  },
+  {
+    "page": 166,
+    "characters": 2957,
+    "start": "Trang 166\r\n<?xml version=\"1.0\" ?>\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android",
+    "end": "th android:fillColor=\"#8ED58A\" android:pathData=\"M6,61L23,48L43,60L59,50L\r\n70,60V66H6Z\"/>\r\n </group>"
+  },
+  {
+    "page": 167,
+    "characters": 1569,
+    "start": "Trang 167\r\n <group android:translateX=\"139\" android:translateY=\"137\" android:rotation=\"-5\" androi\r\nd",
+    "end": "urface\" android:centerColor=\"@color/background\"\r\nandroid:endColor=\"@color/background_card\"/></shape>"
+  },
+  {
+    "page": 168,
+    "characters": 1339,
+    "start": "Trang 168\r\n2 8 5 bg_bottom_sheet\r\nNguồn: app/src/main/res/drawable/bg_bottom_sheet.xml\r\nVai trò: Vec",
+    "end": "\r\n <solid android:color=\"@color/chip_unselected_bg\" />\r\n <corners android:radius=\"20dp\" />\r\n</shape>"
+  },
+  {
+    "page": 169,
+    "characters": 1165,
+    "start": "Trang 169\r\n2 8 8 bg_circle_icon\r\nNguồn: app/src/main/res/drawable/bg_circle_icon.xml\r\nVai trò: Vecto",
+    "end": "id.com/apk/res/android\"\r\n android:shape=\"oval\">\r\n <solid android:color=\"@color/surface\" />\r\n</shape>"
+  },
+  {
+    "page": 170,
+    "characters": 1275,
+    "start": "Trang 170\r\n2 8 11 bg_dotted_border\r\nNguồn: app/src/main/res/drawable/bg_dotted_border.xml\r\nVai trò: ",
+    "end": "c khung chọn. Tên tài nguyên: \r\nbg_fab_add.\r\nMã nguồn đầy đủ\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+  },
+  {
+    "page": 171,
+    "characters": 1230,
+    "start": "Trang 171\r\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n android:shape=\"oval\">",
+    "end": "d:angle=\"135\" />\r\n</shape>\r\n2 8 16 bg_handle_bar\r\nNguồn: app/src/main/res/drawable/bg_handle_bar.xml"
+  },
+  {
+    "page": 172,
+    "characters": 1328,
+    "start": "Trang 172\r\nVai trò: Vector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nbg_h",
+    "end": "\n <corners android:radius=\"24dp\"/>\r\n <stroke android:width=\"1dp\" android:color=\"#E7EEFC\"/>\r\n</shape>"
+  },
+  {
+    "page": 173,
+    "characters": 1304,
+    "start": "Trang 173\r\n2 8 19 bg_notification_item\r\nNguồn: app/src/main/res/drawable/bg_notification_item.xml\r\nV",
+    "end": "</item>\r\n</selector>\r\n2 8 21 bg_photo_overlay\r\nNguồn: app/src/main/res/drawable/bg_photo_overlay.xml"
+  },
+  {
+    "page": 174,
+    "characters": 1235,
+    "start": "Trang 174\r\nVai trò: Vector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nbg_p",
+    "end": "rectangle\">\r\n <solid android:color=\"@color/surface\" />\r\n <corners android:radius=\"16dp\" />\r\n</shape>"
+  },
+  {
+    "page": 175,
+    "characters": 1378,
+    "start": "Trang 175\r\n2 8 24 bg_search_bar\r\nNguồn: app/src/main/res/drawable/bg_search_bar.xml\r\nVai trò: Vector",
+    "end": "ndroid:shape=\"rectangle\">\r\n <solid android:color=\"@color/surface\" />\r\n </shape>\r\n </item>\r\n</ripple>"
+  },
+  {
+    "page": 176,
+    "characters": 1220,
+    "start": "Trang 176\r\n2 8 27 bg_settings_row\r\nNguồn: app/src/main/res/drawable/bg_settings_row.xml\r\nVai trò: Ve",
+    "end": "8\"?>\r\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n android:shape=\"rectangle\">"
+  },
+  {
+    "page": 177,
+    "characters": 1305,
+    "start": "Trang 177\r\n <solid android:color=\"@color/background_light\" />\r\n <corners android:radius=\"12dp\" />\r\n ",
+    "end": ",2zm0,18c-4.41,0 -8,-3.59 -8,-8s3.59,-8 8,-8 8,3.59 8,8 -3.59,8 -8,8z\r\nM11,9h2V7h-2v2z\"/>\r\n</vector>"
+  },
+  {
+    "page": 178,
+    "characters": 1234,
+    "start": "Trang 178\r\n2 8 32 ic_add\r\nNguồn: app/src/main/res/drawable/ic_add.xml\r\nVai trò: Vector icon, hình mi",
+    "end": "ctor icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_album.\r\nMã nguồn đầy đủ"
+  },
+  {
+    "page": 179,
+    "characters": 1720,
+    "start": "Trang 179\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<vector xmlns:android=\"http://schemas.android.com",
+    "end": "illAlpha=\"0.93\" android:pathData=\"M48\r\n,49C34,40 32,27 38,20C43,13 53,13 58,20C65,30 60,41 48,49Z\"/>"
+  },
+  {
+    "page": 180,
+    "characters": 2151,
+    "start": "Trang 180\r\n </group>\r\n <group android:pivotX=\"48\" android:pivotY=\"48\" android:rotation=\"45\">\r\n <path",
+    "end": "h=\"24dp\"\r\n android:height=\"24dp\"\r\n android:viewportWidth=\"24\"\r\n android:viewportHeight=\"24\">\r\n <path"
+  },
+  {
+    "page": 181,
+    "characters": 1211,
+    "start": "Trang 181\r\n android:fillColor=\"#1A1A2E\"\r\n android:pathData=\"M20,11H7.83l5.59,-5.59L12,4l-8,8 8,8 1.4",
+    "end": "0.89,2 2,2h14c1.1,0 2,-0.9 2,-2V5c0,-1.1 -0.9,-2 -2,-2zm0,16H5V8h14v11zM7,10h5v5\r\nH7z\" />\r\n</vector>"
+  },
+  {
+    "page": 182,
+    "characters": 1458,
+    "start": "Trang 182\r\n2 8 40 ic_camera\r\nNguồn: app/src/main/res/drawable/ic_camera.xml\r\nVai trò: Vector icon, h",
+    "end": " version=\"1.0\" encoding=\"utf-8\"?>\r\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\""
+  },
+  {
+    "page": 183,
+    "characters": 1239,
+    "start": "Trang 183\r\n android:shape=\"oval\">\r\n <solid android:color=\"#40FFFFFF\" />\r\n <stroke\r\n android:width=\"2",
+    "end": "12,10.59 6.41,5 5,6.41 10.59,12 5,17.59 6.41,19\r\n12,13.41 17.59,19 19,17.59 13.41,12z\" />\r\n</vector>"
+  },
+  {
+    "page": 184,
+    "characters": 1509,
+    "start": "Trang 184\r\n2 8 45 ic_cloud_done\r\nNguồn: app/src/main/res/drawable/ic_cloud_done.xml\r\nVai trò: Vector",
+    "end": "y.xml\r\nVai trò: Vector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_copy."
+  },
+  {
+    "page": 185,
+    "characters": 1341,
+    "start": "Trang 185\r\nMã nguồn đầy đủ\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n and",
+    "end": "p\"\r\n android:viewportWidth=\"24\"\r\n android:viewportHeight=\"24\">\r\n <path\r\n android:fillColor=\"#6B7280\""
+  },
+  {
+    "page": 186,
+    "characters": 1238,
+    "start": "Trang 186\r\n android:pathData=\"M12.3,2a10,10 0 0,0 -1.9,0.18 10,10 0 1,0 11.42,11.42A10,10 0 0,0\r\n12.",
+    "end": "66,0 3,-1.34\r\n3,-3V4c0,-1.66 -1.34,-3 -3,-3zm-2,20h-4v-1h4v1zm3.25,-3H6.75V4h10.5v14z\" />\r\n</vector>"
+  },
+  {
+    "page": 187,
+    "characters": 1315,
+    "start": "Trang 187\r\n2 8 52 ic_download\r\nNguồn: app/src/main/res/drawable/ic_download.xml\r\nVai trò: Vector ico",
+    "end": "ector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_edit.\r\nMã nguồn đầy đủ"
+  },
+  {
+    "page": 188,
+    "characters": 1436,
+    "start": "Trang 188\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<vector xmlns:android=\"http://schemas.android.com",
+    "end": "h=\"48dp\"\r\n android:height=\"48dp\"\r\n android:viewportWidth=\"48\"\r\n android:viewportHeight=\"48\">\r\n <path"
+  },
+  {
+    "page": 189,
+    "characters": 1586,
+    "start": "Trang 189\r\n android:fillColor=\"#1877F2\"\r\n android:pathData=\"M24,4C12.95,4 4,12.95 4,24c0,9.99 7.34,1",
+    "end": "9,3.81 14.76,3 16.5,3 19.58,3 22,5.42 22,8.5c0,3.78 -3.4,6.8\r\n6 -8.55,11.54L12,21.35z\" />\r\n</vector>"
+  },
+  {
+    "page": 190,
+    "characters": 1519,
+    "start": "Trang 190\r\n2 8 59 ic_favorite_outline\r\nNguồn: app/src/main/res/drawable/ic_favorite_outline.xml\r\nVai",
+    "end": "3,-5V3.5L18.5,9H13z\" />\r\n</vector>\r\n2 8 61 ic_filter\r\nNguồn: app/src/main/res/drawable/ic_filter.xml"
+  },
+  {
+    "page": 191,
+    "characters": 1428,
+    "start": "Trang 191\r\nVai trò: Vector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_f",
+    "end": "ồn đầy đủ\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n android:width=\"24dp\""
+  },
+  {
+    "page": 192,
+    "characters": 1757,
+    "start": "Trang 192\r\n android:height=\"24dp\"\r\n android:viewportWidth=\"24\"\r\n android:viewportHeight=\"24\">\r\n <!--",
+    "end": "2 -2,-2s-2,0.9 -2,2\r\nH7c0,-2.76 2.24,-5 5,-5s5,2.24 5,5c0,1.04 -0.42,1.99 -1.07,2.75z\" />\r\n</vector>"
+  },
+  {
+    "page": 193,
+    "characters": 1362,
+    "start": "Trang 193\r\n2 8 65 ic_image_size\r\nNguồn: app/src/main/res/drawable/ic_image_size.xml\r\nVai trò: Vector",
+    "end": " icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_instagram.\r\nMã nguồn đầy đủ"
+  },
+  {
+    "page": 194,
+    "characters": 2735,
+    "start": "Trang 194\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n android:width=\"48dp\"",
+    "end": " 0.14,-2 0,-0.68 -0.06,-1.34 -0.1\r\n4,-2h3.38c0.16,0.64 0.26,1.31 0.26,2s-0.1,1.36 -0.26,2h-3.38z\" />"
+  },
+  {
+    "page": 195,
+    "characters": 1349,
+    "start": "Trang 195\r\n</vector>\r\n2 8 69 ic_launcher_background\r\nNguồn: app/src/main/res/drawable/ic_launcher_ba",
+    "end": "-7zm0,9.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5 2.5,1.12 2.5,2.5 -1.12,2.5 -\r\n2.5,2.5z\" />"
+  },
+  {
+    "page": 196,
+    "characters": 1295,
+    "start": "Trang 196\r\n</vector>\r\n2 8 72 ic_lock\r\nNguồn: app/src/main/res/drawable/ic_lock.xml\r\nVai trò: Vector ",
+    "end": ".17l-2.58,2.58L17,17l5,-5zM4\r\n,5h8V3H4c-1.1,0 -2,0.9 -2,2v14c0,1.1 0.9,2 2,2h8v-2H4V5z\"/>\r\n</vector>"
+  },
+  {
+    "page": 197,
+    "characters": 1603,
+    "start": "Trang 197\r\n2 8 74 ic_messages\r\nNguồn: app/src/main/res/drawable/ic_messages.xml\r\nVai trò: Vector ico",
+    "end": "\r\nVai trò: Vector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_more_vert."
+  },
+  {
+    "page": 198,
+    "characters": 1517,
+    "start": "Trang 198\r\nMã nguồn đầy đủ\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<vector xmlns:android=\"http://sc",
+    "end": ":android=\"http://schemas.android.com/apk/res/android\"\r\n android:width=\"24dp\"\r\n android:height=\"24dp\""
+  },
+  {
+    "page": 199,
+    "characters": 1492,
+    "start": "Trang 199\r\n android:viewportWidth=\"24\"\r\n android:viewportHeight=\"24\">\r\n <path\r\n android:fillColor=\"#",
+    "end": "4c0,1.1 0.9,2 \r\n2,2h14c1.1,0 2,-0.9 2,-2zM8.5,13.5l2.5,3.01L14.5,12l4.5,6H5l3.5,-4.5z\" />\r\n</vector>"
+  },
+  {
+    "page": 200,
+    "characters": 1275,
+    "start": "Trang 200\r\n2 8 81 ic_play_circle\r\nNguồn: app/src/main/res/drawable/ic_play_circle.xml\r\nVai trò: Vect",
+    "end": "ml\r\nVai trò: Vector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_profile."
+  },
+  {
+    "page": 201,
+    "characters": 1364,
+    "start": "Trang 201\r\nMã nguồn đầy đủ\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n and",
+    "end": "h=\"24dp\"\r\n android:height=\"24dp\"\r\n android:viewportWidth=\"24\"\r\n android:viewportHeight=\"24\">\r\n <path"
+  },
+  {
+    "page": 202,
+    "characters": 1692,
+    "start": "Trang 202\r\n android:fillColor=\"#6B7280\"\r\n android:pathData=\"M12,4V1L8,5l4,4V6c3.31,0 6,2.69 6,6 0,1.",
+    "end": "-6,18h2v-2h-2v2zm-8,-8\r\nh2v-2H5v2zm0,-4h2V7H5v2zm8,8v-6H7v6h6zm-2,-4h2v2h-2v-2zm8,-2h2v-2h-2v2zm-4,6"
+  },
+  {
+    "page": 203,
+    "characters": 1919,
+    "start": "Trang 203\r\nh2v-2h-2v2zm4,-10v2h2c0,-1.1 -0.9,-2 -2,-2zm0,6h2v-2h-2v2zm0,4c1.1,0 2,-0.9 2,-2h-2v2\r\nz\"",
+    "end": "oid:width=\"24dp\"\r\n android:height=\"24dp\"\r\n android:viewportWidth=\"24\"\r\n android:viewportHeight=\"24\">"
+  },
+  {
+    "page": 204,
+    "characters": 1685,
+    "start": "Trang 204\r\n <path\r\n android:fillColor=\"#1A1A2E\"\r\n android:pathData=\"M18,16.08c-0.76,0 -1.44,0.3 -1.9",
+    "end": "d:pathData=\"M16,17.01V10h-2v7.01h-3L15,21l4,-3.99h-3zM9,3L5,6.99h3V14\r\nh2V6.99h3L9,3z\" />\r\n</vector>"
+  },
+  {
+    "page": 205,
+    "characters": 1291,
+    "start": "Trang 205\r\n2 8 92 ic_sync\r\nNguồn: app/src/main/res/drawable/ic_sync.xml\r\nVai trò: Vector icon, hình ",
+    "end": ".xml\r\nVai trò: Vector icon, hình minh họa và nền bo góc hoặc khung chọn. Tên tài nguyên: \r\nic_video."
+  },
+  {
+    "page": 206,
+    "characters": 1502,
+    "start": "Trang 206\r\nMã nguồn đầy đủ\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n and",
+    "end": "oid.com/apk/res/android\"\r\n android:width=\"24dp\"\r\n android:height=\"24dp\"\r\n android:viewportWidth=\"24\""
+  },
+  {
+    "page": 207,
+    "characters": 1759,
+    "start": "Trang 207\r\n android:viewportHeight=\"24\">\r\n <path\r\n android:fillColor=\"#6B7280\"\r\n android:pathData=\"M",
+    "end": "lColor=\"#0068FF\"\r\n android:pathData=\"M24,4C12.95,4 4,12.95 4,24c0,3.61 0.98,7 2.68,9.92L4,44l10.37,-"
+  },
+  {
+    "page": 208,
+    "characters": 1520,
+    "start": "Trang 208\r\n2.61C17.15,43.04 20.46,44 24,44c11.05,0 20,-8.95 20,-20S35.05,4 24,4zm-4,26h-6v-3l4,-5\r\nh",
+    "end": "ive-icon>\r\n2 10 2 ic_launcher_round\r\nNguồn: app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+  },
+  {
+    "page": 209,
+    "characters": 1525,
+    "start": "Trang 209\r\nVai trò: Cấu hình biểu tượng ứng dụng thích ứng từ Android API 26. Tên tài nguyên: \r\nic_l",
+    "end": "ên tài nguyên: \r\ndata_extraction_rules.\r\nMã nguồn đầy đủ\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?><!--"
+  },
+  {
+    "page": 210,
+    "characters": 817,
+    "start": "Trang 210\r\n Sample data extraction rules file; uncomment and customize as necessary.\r\n See https://d",
+    "end": "ndroid\"><files-path name=\"m\r\nedia\" path=\"media/\"/><cache-path name=\"shared\" path=\"shared/\"/></paths>"
+  },
+  {
+    "page": 211,
+    "characters": 405,
+    "start": "Trang 211\r\n3 Kết quả sau khi chạy\r\nCác hình dưới đây là ảnh chụp ứng dụng chạy trên máy ảo, không ph",
+    "end": "àn hình \r\ncó dữ liệu tài khoản đang đăng nhập; tên và số mục không được gán cố định trong giao diện."
+  },
+  {
+    "page": 212,
+    "characters": 377,
+    "start": "Trang 212\r\n3 1 Màn hình khởi động\r\nHình 1 Màn hình khởi động\r\nBố cục: activity_splash.xml. Lớp xử lý",
+    "end": "hám phá trên thiết \r\nbị mở chế độ khách. Không cần thao tác đăng nhập để giới thiệu bố cục màn chào."
+  },
+  {
+    "page": 213,
+    "characters": 398,
+    "start": "Trang 213\r\n3 2 Màn hình đăng nhập\r\nHình 2 Màn hình đăng nhập\r\nBố cục: activity_login.xml. Lớp xử lý:",
+    "end": "il và số điện thoại đi theo hai \r\ncách xác thực khác nhau; cửa sổ Google là luồng thật của hệ thống."
+  },
+  {
+    "page": 214,
+    "characters": 393,
+    "start": "Trang 214\r\n3 3 Màn hình đăng ký\r\nHình 3 Màn hình đăng ký\r\nBố cục: activity_register.xml. Lớp xử lý: ",
+    "end": "ước khi gọi Firebase. Đăng ký email gửi liên \r\nkết xác minh; không dùng mã email giả trong bản demo."
+  },
+  {
+    "page": 215,
+    "characters": 548,
+    "start": "Trang 215\r\n3 4 Thư viện và thứ tự chọn nhiều\r\nHình 4 Thư viện và thứ tự chọn nhiều\r\nBố cục: activity",
+    "end": "ía sau cập nhật; chọn lại thì mục đó được xếp cuối. Có thể thêm các mục đã chọn vào \r\nalbum hoặc ẩn."
+  },
+  {
+    "page": 216,
+    "characters": 428,
+    "start": "Trang 216\r\n3 5 Danh sách album\r\nHình 5 Danh sách album\r\nBố cục: activity_album.xml và item_album.xml",
+    "end": "ung; menu ba \r\nchấm hỗ trợ thêm ảnh, đổi tên hoặc xóa album. Xóa album không xóa tệp trong thư viện."
+  },
+  {
+    "page": 217,
+    "characters": 403,
+    "start": "Trang 217\r\n3 6 Nội dung album Du lịch\r\nHình 6 Nội dung album Du lịch\r\nBố cục: activity_album_detail.",
+    "end": "viện. Menu hỗ trợ chọn nhiều và bỏ các \r\nmục khỏi album; quan hệ thành viên được lưu trong albumIds."
+  },
+  {
+    "page": 218,
+    "characters": 356,
+    "start": "Trang 218\r\n3 7 Tạo album mới\r\nHình 7 Tạo album mới\r\nBố cục: activity_create_album.xml. Lớp xử lý: Cr",
+    "end": "g rỗng, chọn ảnh rồi nhấn tạo. Album mới được ghi vào \r\nthư viện của khách hoặc tài khoản đang dùng."
+  },
+  {
+    "page": 219,
+    "characters": 359,
+    "start": "Trang 219\r\n3 8 Tìm kiếm ảnh và video\r\nHình 8 Tìm kiếm ảnh và video\r\nBố cục: activity_search.xml. Lớp",
+    "end": "; chọn Ảnh hoặc Video để thu hẹp kết quả. Mục đã \r\nẩn không xuất hiện trong kết quả tìm kiếm thường."
+  },
+  {
+    "page": 220,
+    "characters": 381,
+    "start": "Trang 220\r\n3 9 Xem ảnh chi tiết\r\nHình 9 Xem ảnh chi tiết\r\nBố cục: activity_photo_detail.xml. Lớp xử ",
+    "end": "g mở thông tin hoặc ẩn và bỏ ẩn. Khi \r\nmở video, chạm vùng xem trước để phát bằng ứng dụng hệ thống."
+  },
+  {
+    "page": 221,
+    "characters": 487,
+    "start": "Trang 221\r\n3 10 Cắt ảnh bằng khung tương tác\r\nHình 10 Cắt ảnh bằng khung tương tác\r\nBố cục: activity",
+    "end": "ong để di \r\nchuyển → Áp dụng cắt. Có thể xoay 90 độ; Lưu bản sao tạo tệp mới thay vì ghi đè ảnh gốc."
+  },
+  {
+    "page": 222,
+    "characters": 458,
+    "start": "Trang 222\r\n3 11 Vẽ trực tiếp lên ảnh\r\nHình 11 Vẽ trực tiếp lên ảnh\r\nBố cục: activity_edit_photo.xml.",
+    "end": "ảnh. \r\nHoàn tác và Làm lại áp dụng cho thao tác chỉnh sửa; bản xuất JPEG bao gồm cả ảnh và nét \r\nvẽ."
+  },
+  {
+    "page": 223,
+    "characters": 444,
+    "start": "Trang 223\r\n3 12 Ảnh và video đã ẩn\r\nHình 12 Ảnh và video đã ẩn\r\nBố cục: Dùng lại activity_main.xml v",
+    "end": ". Nhấn giữ một \r\nmục → Bỏ ẩn để đưa về thư viện; có chọn nhiều. Chức năng này chưa có khóa mật khẩu."
+  },
+  {
+    "page": 224,
+    "characters": 405,
+    "start": "Trang 224\r\n3 13 Hồ sơ và cài đặt\r\nHình 13 Hồ sơ và cài đặt\r\nBố cục: activity_settings.xml. Lớp xử lý",
+    "end": "ương ứng. Chọn Giao diện để đổi sáng \r\nhoặc tối cho toàn app; lựa chọn được giữ khi mở lại ứng dụng."
+  },
+  {
+    "page": 225,
+    "characters": 454,
+    "start": "Trang 225\r\n3 14 Thông tin tài khoản trên Firestore\r\nHình 14 Thông tin tài khoản trên Firestore\r\nBố c",
+    "end": "tin rồi lưu; \r\nchờ xác nhận trước khi đối chiếu các trường displayName và bio trên Firebase Console."
+  },
+  {
+    "page": 226,
+    "characters": 413,
+    "start": "Trang 226\r\n3 15 Giao diện sao lưu minh họa\r\nHình 15 Giao diện sao lưu minh họa\r\nBố cục: activity_bac",
+    "end": " báo giải thích; không tải file lên \r\nFirebase Storage, không có sao lưu tự động trong bản hiện tại."
+  },
+  {
+    "page": 227,
+    "characters": 469,
+    "start": "Trang 227\r\n3 16 Thông báo hoạt động\r\nHình 16 Thông báo hoạt động\r\nBố cục: activity_notifications.xml",
+    "end": "câu sao lưu lên Storage từ dữ liệu cũ, câu đó không chứng minh bản hiện tại đã tải file lên \r\ncloud."
+  },
+  {
+    "page": 228,
+    "characters": 464,
+    "start": "Trang 228\r\n3 17 Thùng rác\r\nHình 17 Thùng rác\r\nBố cục: activity_trash.xml và item_media_row.xml. Lớp ",
+    "end": "ùng \r\nrác, ứng dụng có xử lý các mục quá 30 ngày; không phải dịch vụ dọn trên server khi app \r\nđóng."
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "696865098097",
+    "project_id": "gallery-app-71623",
+    "storage_bucket": "gallery-app-71623.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696865098097:android:8ec0a19d0b3a77d79d8ed0",
+        "android_client_info": {
+          "package_name": "com.example.appanh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV9hEsSIVKbuTS1G9QyYSbLkvxQZy1DW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

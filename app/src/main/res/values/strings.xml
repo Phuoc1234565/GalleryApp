@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">App Ảnh</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_photos">Ảnh</string>
+    <string name="nav_albums">Album</string>
+    <string name="nav_search">Tìm kiếm</string>
+    <string name="nav_profile">Hồ sơ</string>
+
+    <!-- Options Menu -->
+    <string name="menu_select_multiple">Chọn nhiều</string>
+    <string name="menu_add_to_album">Thêm vào album</string>
+    <string name="menu_settings">Cài đặt</string>
+    <string name="menu_backup">Sao lưu</string>
+    <string name="menu_help">Trợ giúp</string>
+
+    <!-- Context Menu -->
+    <string name="context_view_detail">Xem chi tiết</string>
+    <string name="context_add_to_album">Thêm vào album</string>
+    <string name="context_favorite">Yêu thích</string>
+    <string name="context_edit">Chỉnh sửa</string>
+    <string name="context_share">Chia sẻ</string>
+    <string name="context_delete">Xóa</string>
+
+    <!-- Photo Detail View -->
+    <string name="action_favorite">Yêu thích</string>
+    <string name="action_edit">Chỉnh sửa</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_delete">Xóa</string>
+    <string name="action_more">Thêm</string>
+
+    <!-- Edit Photo -->
+    <string name="edit_title">Chỉnh sửa</string>
+    <string name="edit_crop">Cắt</string>
+    <string name="edit_filter">Bộ lọc</string>
+    <string name="edit_adjust">Điều chỉnh</string>
+    <string name="edit_text">Văn bản</string>
+    <string name="edit_rotate">Xoay</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_save">Lưu</string>
+
+    <!-- Photo Info -->
+    <string name="info_title">Chi tiết</string>
+    <string name="info_filename">Tên tệp</string>
+    <string name="info_size">Kích thước</string>
+    <string name="info_date">Thời gian chụp</string>
+    <string name="info_location">Đường dẫn</string>
+    <string name="info_device">Thiết bị</string>
+    <string name="info_type">Loại</string>
+    <string name="btn_close">Đóng</string>
+
+    <!-- Album -->
+    <string name="album_title">Album</string>
+    <string name="btn_create_album">Tạo album</string>
+    <string name="album_default_count">0 ảnh</string>
+
+    <!-- Create Album -->
+    <string name="create_album_title">Tạo album</string>
+    <string name="hint_album_name">Tên album</string>
+    <string name="hint_album_desc">Mô tả</string>
+    <string name="btn_choose_cover">Chọn ảnh</string>
+    <string name="btn_create">Tạo album</string>
+
+    <!-- Album Detail -->
+    <string name="album_detail_title">Album chi tiết</string>
+    <string name="album_select_multiple">Chọn nhiều</string>
+    <string name="album_add_photo">Thêm ảnh</string>
+    <string name="album_rename">Đổi tên</string>
+    <string name="album_delete">Xóa album</string>
+    <string name="album_stats_photos">%1$d ảnh</string>
+    <string name="album_stats_selected">%1$d đã chọn</string>
+
+    <!-- Trash -->
+    <string name="trash_title">Thùng rác</string>
+    <string name="trash_subtitle">Các mục sẽ tự xóa vĩnh viễn sau 30 ngày</string>
+    <string name="btn_empty_trash">Dọn sạch thùng rác</string>
+    <string name="btn_restore">Khôi phục</string>
+    <string name="btn_delete_permanent">Xóa vĩnh viễn</string>
+</resources>

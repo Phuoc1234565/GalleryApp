@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".GalleryApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppẢnh"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="31">
+
+        <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.files" android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name=".AccountActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".SearchActivity" android:exported="false" />
+        <activity android:name=".HiddenMediaActivity" android:exported="false" />
+        <activity android:name=".CreateAlbumActivity" android:exported="false" />
+        <!-- Screen 1: Splash Screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppẢnh.Splash"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Screen 2: Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Screen 3: Register -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Screen 4: OTP Verification -->
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Screen 5: Main Gallery -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Screen 9: Photo Detail -->
+        <activity
+            android:name=".PhotoDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppẢnh.Fullscreen" />
+
+        <!-- Screen 10: Edit Photo -->
+        <activity
+            android:name=".EditPhotoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Screen 12: Album List -->
+        <activity
+            android:name=".AlbumActivity"
+            android:exported="false" />
+
+        <!-- Screen 14: Album Detail -->
+        <activity
+            android:name=".AlbumDetailActivity"
+            android:exported="false" />
+
+        <!-- Screen 15: Trash -->
+        <activity
+            android:name=".TrashActivity"
+            android:exported="false" />
+
+        <!-- Screen 16: Settings -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <!-- Screen 17: Google Sign-In -->
+        <activity
+            android:name=".GoogleSignInActivity"
+            android:exported="false" />
+
+        <!-- Screen 18: Backup -->
+        <activity
+            android:name=".BackupActivity"
+            android:exported="false" />
+
+        <!-- Screen 20: Notifications -->
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+
+        <!-- Screen 21: Share (used as bottom sheet from other activities) -->
+        <activity
+            android:name=".ShareActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppẢnh.Dialog" />
+
+    </application>
+
+</manifest>

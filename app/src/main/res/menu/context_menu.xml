@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_detail"
+        android:icon="@drawable/ic_info"
+        android:title="@string/context_view_detail" />
+    <item
+        android:id="@+id/context_add_album"
+        android:icon="@drawable/ic_album"
+        android:title="@string/context_add_to_album" />
+    <item
+        android:id="@+id/context_favorite"
+        android:icon="@drawable/ic_favorite_outline"
+        android:title="@string/context_favorite" />
+    <item
+        android:id="@+id/context_edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/context_edit" />
+    <item
+        android:id="@+id/context_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/context_share" />
+    <item
+        android:id="@+id/context_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/context_delete" />
+</menu>

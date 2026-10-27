@@ -1,0 +1,14 @@
+[
+  {
+    "file": "album_family.jpg",
+    "download": "https://images.pexels.com/photos/1682497/pexels-photo-1682497.jpeg?auto=compress&cs=tinysrgb&w=960",
+    "source": "https://www.pexels.com/photo/family-walking-on-path-1682497/",
+    "sha256": "9c02b41580df11b131f00b1663cd25463c7f8aa0f4f86eeb640268772cb8f8b9"
+  },
+  {
+    "file": "album_food.jpg",
+    "download": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=960&q=85",
+    "source": "https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0",
+    "sha256": "3c9f9c16476109a0297964fe7b551ea1ac1bfa41f1b1b683aa852e2ad691f9cd"
+  }
+]

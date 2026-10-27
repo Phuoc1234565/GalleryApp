@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="14dp" app:cardElevation="0dp" app:cardBackgroundColor="@color/surface" app:strokeWidth="0dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+            <ImageView android:id="@+id/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Ảnh bìa album"/>
+            <ImageView android:id="@+id/albumVideoBadge" android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center" android:background="@drawable/bg_video_duration" android:src="@drawable/ic_play_circle" app:tint="@color/white" android:contentDescription="Album có video" android:visibility="gone"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:id="@+id/caption" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="40dp" android:paddingStart="10dp" android:paddingEnd="0dp" android:gravity="center_vertical" android:textColor="@color/text_primary" android:textSize="15sp" android:lineSpacingExtra="4dp" android:maxLines="2" android:ellipsize="end"/>
+            <ImageButton android:id="@+id/albumMore" android:layout_width="40dp" android:layout_height="48dp" android:layout_gravity="end|center_vertical" android:padding="10dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_more_vert" app:tint="@color/text_secondary" android:contentDescription="Tùy chọn album"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/check" android:layout_width="1dp" android:layout_height="1dp" android:visibility="gone" android:contentDescription="Đã chọn"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screenRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="56dp" app:title="Sao lưu và đồng bộ" app:titleTextAppearance="@style/GalleryToolbarTitle" app:titleTextColor="@color/text_primary" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="@color/text_primary"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Giữ an toàn mọi khoảnh khắc" android:textSize="24sp" android:textColor="@color/text_primary" android:fontFamily="sans-serif" android:layout_marginTop="20dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sao lưu ảnh và video để có thể xem lại trên các thiết bị của bạn." android:textSize="16sp" android:textColor="@color/text_secondary" android:fontFamily="sans-serif" android:layout_marginTop="12dp" android:layout_marginBottom="24dp" android:lineSpacingExtra="4dp"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/autoBackup" android:layout_width="match_parent" android:layout_height="72dp" android:text="Sao lưu khi mở ứng dụng" android:textColor="@color/text_primary" android:textSize="16sp"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/wifiOnly" android:layout_width="match_parent" android:layout_height="72dp" android:text="Chỉ dùng Wi-Fi" android:textColor="@color/text_primary" android:textSize="16sp" android:checked="true"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Các file đã sao lưu sẽ được bỏ qua ở lần tiếp theo." android:textSize="14sp" android:textColor="@color/text_secondary" android:fontFamily="sans-serif" android:layout_marginTop="20dp" android:layout_marginBottom="28dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/backupNow" style="@style/PrimaryButton" android:layout_width="match_parent" android:layout_height="52dp" android:text="Sao lưu ngay" android:letterSpacing="0" android:textSize="16sp"/>
+            <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="20dp" android:max="100"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="14sp" android:textColor="@color/text_secondary" android:fontFamily="sans-serif" android:id="@+id/status" android:visibility="gone" android:paddingVertical="8dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

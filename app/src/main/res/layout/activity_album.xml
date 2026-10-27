@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screenRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="64dp">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="56dp" app:title="Album" app:titleTextAppearance="@style/GalleryToolbarTitle" app:titleTextColor="@color/text_primary" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="@color/text_primary"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/createAlbum" style="@style/TextButton" android:layout_width="144dp" android:layout_height="40dp" android:layout_gravity="end|center_vertical" android:layout_marginEnd="16dp" android:backgroundTint="@color/primary_light" android:text="Tạo album" android:textSize="15sp" app:icon="@drawable/ic_add" app:iconGravity="textStart" app:cornerRadius="22dp"/>
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical" android:paddingHorizontal="12dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="14sp" android:textColor="@color/text_secondary" android:fontFamily="sans-serif" android:id="@+id/status" android:visibility="gone" android:paddingVertical="8dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/grid" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingBottom="16dp"/>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/navigation" android:layout_width="match_parent" android:layout_height="68dp" android:background="@color/surface" app:menu="@menu/bottom_navigation_menu" app:labelVisibilityMode="labeled" app:itemIconTint="@color/nav_colors" app:itemTextColor="@color/nav_colors" app:itemTextAppearanceActive="@style/GalleryNavigationText" app:itemTextAppearanceInactive="@style/GalleryNavigationText"/>
+</LinearLayout>

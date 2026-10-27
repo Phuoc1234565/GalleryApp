@@ -1,0 +1,7 @@
+<resources>
+    <color name="button_primary">#2864FF</color>
+    <color name="theme_on_primary">#FFFFFF</color>
+    <color name="danger">#CB243C</color>
+    <color name="viewer_background">#F6F9FF</color>
+    <color name="viewer_controls">#FFFFFF</color>
+    </resources>

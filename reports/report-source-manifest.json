@@ -1,0 +1,1148 @@
+[
+  {
+    "path": "app/src/main/java/com/example/appanh/AccountActivity.java",
+    "sha256": "2d13a889791923d8abbc492c27095264eae3767837a4938c97a20fd630c666f0",
+    "characters": 9967,
+    "lines": 182
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/AlbumActivity.java",
+    "sha256": "205f385ffb105b644b41bdf1966cbb07cf10cbd44a855347451354e6a09dd318",
+    "characters": 82,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/AlbumDetailActivity.java",
+    "sha256": "507cc127732bf3ea4162eb1f08ebf5cf224fb75510988333baa2d83eb41b3208",
+    "characters": 88,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/AuthActivity.java",
+    "sha256": "0c573638634b7917de53a01ff309071c412a16749acd6171c5ee5d8fd83de27b",
+    "characters": 4998,
+    "lines": 56
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/BackupActivity.java",
+    "sha256": "bdafee884782b2dcf4e49693c295b4e2818b4c21ee47d6077e65150b21fc7593",
+    "characters": 1532,
+    "lines": 25
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/BaseActivity.java",
+    "sha256": "c065bd3e88a209eeb08c1dd466ba9631d30b1e2b0e13b5fca563613f99bf7bd1",
+    "characters": 5954,
+    "lines": 82
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/CreateAlbumActivity.java",
+    "sha256": "ab221addc340d1a04ac1df40a9655f6288155404131458132609b5c61800e75b",
+    "characters": 88,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/EditPhotoActivity.java",
+    "sha256": "057e098c40d03b55d112cf2a6abc46288eee833deb9e869f047cafc8847c26ea",
+    "characters": 8719,
+    "lines": 76
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/GalleryActivity.java",
+    "sha256": "f0f1aab40b5a8afc8c0c674f02f73005e26bbb89b16bfec1874c0085f793f456",
+    "characters": 19302,
+    "lines": 77
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/GalleryApplication.java",
+    "sha256": "a84d7167e64b3c7defe0f4b177bcbee12262b6fa041afa859187f7bbecfd5e15",
+    "characters": 1267,
+    "lines": 36
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/GalleryRepository.java",
+    "sha256": "91a396c077b261bb414d9644a712bfbb200630c64f8afe5a85871febd75f8086",
+    "characters": 13547,
+    "lines": 165
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/GoogleSignInActivity.java",
+    "sha256": "81a8d4d3b8ba2af5377915ef50c95c2e0a637f6a633d6fbdb2745d9ca04729f1",
+    "characters": 1726,
+    "lines": 11
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/HiddenMediaActivity.java",
+    "sha256": "37c6242932660965df4dc4d7e760f7313ed6f27e14db9e01ea9c73f6d3434d2e",
+    "characters": 1070,
+    "lines": 18
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/LoginActivity.java",
+    "sha256": "852ec7d3de9c95c48e3d75cc24068de15cd1975e139719c710c67ed5253cb58a",
+    "characters": 79,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/MainActivity.java",
+    "sha256": "b96de730bcf690dce54a65bb2ad54b9a74b7cbed554a4627d774715dcc35b933",
+    "characters": 81,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/MediaAdapter.java",
+    "sha256": "478a760883a8404cdf05dcd4216b5bb757689195ce8bb7649de1b07cf8b7913b",
+    "characters": 4509,
+    "lines": 22
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/NotificationsActivity.java",
+    "sha256": "ce7b3ace86f1d74a8b4322d7d2870aa28debce1b0cd819646caf6a111332db7b",
+    "characters": 3180,
+    "lines": 18
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/OtpActivity.java",
+    "sha256": "06ace69901f8cfa92720742b214bd537040dfbcc644c62eea072b8340092f550",
+    "characters": 3526,
+    "lines": 43
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/PhotoDetailActivity.java",
+    "sha256": "00d851b359b4d46aa1d668febc13d7fee8f513fb101d115c6c7e32a9d766d24e",
+    "characters": 4349,
+    "lines": 22
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/RegisterActivity.java",
+    "sha256": "aac55b3643bd1ba8ef23f86161b0994a2ea0e9371f4381ef4b8c302b3e6e8da8",
+    "characters": 82,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/SearchActivity.java",
+    "sha256": "e772b1f5af7f81da062a4bf9ec2d713611e7a1ee086ec71f8c5b5c2c7b8a1698",
+    "characters": 83,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/SettingsActivity.java",
+    "sha256": "9ff35996da0eb9922bfadc4cf19ae7aa675e741d873bd2a334f53bfcfc16c95f",
+    "characters": 5373,
+    "lines": 85
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/ShareActivity.java",
+    "sha256": "d5d0101eb0a377757119f419e13866930f1276d8cbccea8ed0ad057157c9e697",
+    "characters": 2926,
+    "lines": 14
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/SplashActivity.java",
+    "sha256": "6301071d5b8c1a4778e9ecf91468c6ecfb536504b9567834bde973100f4c3dea",
+    "characters": 1490,
+    "lines": 32
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/ThemeManager.java",
+    "sha256": "22ef7faafd36a01fcc5fb2d357f8c4ddb9351ca986a56d753209b7548c747221",
+    "characters": 803,
+    "lines": 20
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/TrashActivity.java",
+    "sha256": "b40835870f865c74f3c14a804ec503f14e5c43c9e0b2ae245adbc6496ba9fda8",
+    "characters": 82,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/editor/EditorCanvasView.java",
+    "sha256": "6ea7da887075e79878fba61ece13a00d07676f00670f7284da9ae323474a280d",
+    "characters": 8972,
+    "lines": 83
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/editor/EditorDocument.java",
+    "sha256": "3afb97b2c095e82a72c96ffca58bcb18081a38140167f1117480c6b7789a3b29",
+    "characters": 6402,
+    "lines": 71
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/editor/EditorViewModel.java",
+    "sha256": "4cbb4149fcc4b9a77f562e4ed19af249f2eaf3189ff158c4cf1704d541d5e24c",
+    "characters": 4745,
+    "lines": 73
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/helpers/FirebaseHelper.java",
+    "sha256": "1c1f85c48d2a9236a7e07199c3a57bf04122ccc8a01c55eda66c08294ac7bd24",
+    "characters": 33788,
+    "lines": 895
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/helpers/PermissionHelper.java",
+    "sha256": "4f87e561043ffa44afa10b11a855cc39bc6d9c17e5222787f58c6f2cd6e9dd64",
+    "characters": 8438,
+    "lines": 218
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/helpers/PhotoHelper.java",
+    "sha256": "c4ab5e7d0003b1f39409b9d6c5a4c1ab980e9200942203cb4a3f8687fc8d1ba9",
+    "characters": 26165,
+    "lines": 652
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/models/Album.java",
+    "sha256": "90f6259d77df51839e4bb8de3928177cbef70c7ecca3e26cde03d5c365da3734",
+    "characters": 3659,
+    "lines": 163
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/models/Notification.java",
+    "sha256": "6d0b316e950121af73f24aa250a7d54bfb6edc243e4942e15e1afcacda95d06d",
+    "characters": 2767,
+    "lines": 126
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/models/Photo.java",
+    "sha256": "613f3eceb1bd9e055c6b2e804ec548a20927967e8267a54e0f24a55243dae467",
+    "characters": 6114,
+    "lines": 266
+  },
+  {
+    "path": "app/src/main/java/com/example/appanh/models/User.java",
+    "sha256": "e62c3e55c99e4d7f1004a54a7b3bfa3914c7594fbdd76aff7c9280ccd552d553",
+    "characters": 4482,
+    "lines": 196
+  },
+  {
+    "path": "app/src/main/AndroidManifest.xml",
+    "sha256": "46bf79a3d4fa9846d5b17e3a08aa587df93100bf5b3d8e803bedfef08a879dd0",
+    "characters": 4533,
+    "lines": 124
+  },
+  {
+    "path": "app/src/main/res/layout/activity_account.xml",
+    "sha256": "e9b030f2594bed6832586e40f70fcc99522976e700a505253508bbee43fa83f8",
+    "characters": 8252,
+    "lines": 79
+  },
+  {
+    "path": "app/src/main/res/layout/activity_album.xml",
+    "sha256": "ca4f9e30fce2be970ad86f9c631e9dec6adbccb756bdb2f8d0355338f1af789b",
+    "characters": 2384,
+    "lines": 12
+  },
+  {
+    "path": "app/src/main/res/layout/activity_album_detail.xml",
+    "sha256": "0f96a6faf5eda1f7b494b38cc91aedf2af8a9324eb1cf4daa3b10a5ec4003f55",
+    "characters": 1360,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/layout/activity_backup.xml",
+    "sha256": "30c32722cd58da5c98c7088bdc51f7d6ef99c9792c637588075b135a4f27d9fb",
+    "characters": 3335,
+    "lines": 16
+  },
+  {
+    "path": "app/src/main/res/layout/activity_create_album.xml",
+    "sha256": "86037fa346d426678d30dccc5ebd8ed53e5acb89a0b7493cc48ebc1bd3e72504",
+    "characters": 2482,
+    "lines": 13
+  },
+  {
+    "path": "app/src/main/res/layout/activity_dark_gallery.xml",
+    "sha256": "9efc87fbf7a51147cb3a79cc8b42ab31bc0cfcd8e2637286fe264a75b8947b07",
+    "characters": 6833,
+    "lines": 27
+  },
+  {
+    "path": "app/src/main/res/layout/activity_edit_photo.xml",
+    "sha256": "920191cd0fae027bf1f3167492b8d472aaac6742d2cdf39e3d894788527323fc",
+    "characters": 14425,
+    "lines": 72
+  },
+  {
+    "path": "app/src/main/res/layout/activity_google_sign_in.xml",
+    "sha256": "58034674a5f76a09acc568c20d6cd9a0aef69d7034b45964189c4199e23f8535",
+    "characters": 2699,
+    "lines": 15
+  },
+  {
+    "path": "app/src/main/res/layout/activity_login.xml",
+    "sha256": "92704c9cf16901d8402d6d9d9f6a0f578e0ec2ceec5e822ed0bffdfdb32533d5",
+    "characters": 6263,
+    "lines": 28
+  },
+  {
+    "path": "app/src/main/res/layout/activity_main.xml",
+    "sha256": "9efc87fbf7a51147cb3a79cc8b42ab31bc0cfcd8e2637286fe264a75b8947b07",
+    "characters": 6833,
+    "lines": 27
+  },
+  {
+    "path": "app/src/main/res/layout/activity_notifications.xml",
+    "sha256": "b5849ca643323b6d6140e15da63162fa1cbf283d7ed078c9fbeac497e193f1f8",
+    "characters": 1975,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/layout/activity_otp.xml",
+    "sha256": "f44f53c9410c6ae85cfa61c7a1c82d49c14707a0a8ea3391c71f57a13e8abace",
+    "characters": 5521,
+    "lines": 21
+  },
+  {
+    "path": "app/src/main/res/layout/activity_photo_detail.xml",
+    "sha256": "8ee3f8fac8bfb7647004c9bf4e0c2a6059af71e82715310a3996f34e7bd387cc",
+    "characters": 3518,
+    "lines": 15
+  },
+  {
+    "path": "app/src/main/res/layout/activity_register.xml",
+    "sha256": "4309e31703e77e78640d2566ddba55047507ff9b16bd9a1622ae624b48012bb8",
+    "characters": 7188,
+    "lines": 31
+  },
+  {
+    "path": "app/src/main/res/layout/activity_search.xml",
+    "sha256": "3c21d02b49d4ffe73629daaf49f62f2abd0f8df285e292ae1165e247c3c64c1d",
+    "characters": 7155,
+    "lines": 28
+  },
+  {
+    "path": "app/src/main/res/layout/activity_settings.xml",
+    "sha256": "efe3374bd96811df2aa5d01d83521a5721937a0bbac01e53c399c9138033928b",
+    "characters": 19707,
+    "lines": 97
+  },
+  {
+    "path": "app/src/main/res/layout/activity_splash.xml",
+    "sha256": "8d336f7b36060fdfdfbf99b732ebb355048341d0e037e6d60b2e789ab483d2ba",
+    "characters": 3669,
+    "lines": 13
+  },
+  {
+    "path": "app/src/main/res/layout/activity_trash.xml",
+    "sha256": "fbb38cc1512c640607a46c49d9dcdefee707c571a0f23f870186eb112034397e",
+    "characters": 1979,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/layout/dialog_photo_info.xml",
+    "sha256": "8b0240030b6545572ed316e8d63a8b4740ca56d5b6a067d3e439c8e6de5cac42",
+    "characters": 7308,
+    "lines": 48
+  },
+  {
+    "path": "app/src/main/res/layout/item_album.xml",
+    "sha256": "36f37fdcfb28a67b5793e08dcb7488ee11b5433be25f8ba1e6295aa2f5f0d87d",
+    "characters": 2250,
+    "lines": 14
+  },
+  {
+    "path": "app/src/main/res/layout/item_media.xml",
+    "sha256": "4970cd3e6f5d2ee7cce6eb6359671cdd354eb5d35d2bf6e63b4db100262b7269",
+    "characters": 1804,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/layout/item_media_row.xml",
+    "sha256": "d10d4b1d69759afcdea82453e9d1243c56a3542e890039cbf8345397a1db9cd8",
+    "characters": 1447,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/layout/item_notification.xml",
+    "sha256": "8be8746fe8319fd20c8f01ebbfdb52cea9da1d740b3e9dc13e9243cc72229bf3",
+    "characters": 882,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/layout/item_photo_grid.xml",
+    "sha256": "7f222928969bd091602508ee4b94b384a2c922feabea5f46b76c0adcafe02282",
+    "characters": 2168,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/layout/sheet_album_options.xml",
+    "sha256": "36b0bd63dc68a62da7a062eb2538557897f6a48cc6e1e5e016de23af325c1624",
+    "characters": 2013,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/layout/sheet_filter.xml",
+    "sha256": "360326785910ab354130b211bb9d266fb5a767c5b9f42c484ef86e5546f3e1ac",
+    "characters": 2231,
+    "lines": 13
+  },
+  {
+    "path": "app/src/main/res/layout/sheet_options.xml",
+    "sha256": "735a4ad5658c70bf81d55a2509dac8fed70cbc933c630d49cc262f20c88dd7d5",
+    "characters": 2751,
+    "lines": 15
+  },
+  {
+    "path": "app/src/main/res/layout/sheet_photo_context.xml",
+    "sha256": "41a2047970d10f442fee99f15d1f54a7c16c593bf1be88b078494d4d6045a9dd",
+    "characters": 3035,
+    "lines": 16
+  },
+  {
+    "path": "app/src/main/res/layout/sheet_share.xml",
+    "sha256": "057972092f3babba07d223b22bb06b1c8005fbfad06a90b7ef4cb1653dd415b2",
+    "characters": 2026,
+    "lines": 12
+  },
+  {
+    "path": "app/src/main/res/menu/album_actions.xml",
+    "sha256": "5f95ae4bee76aed779a992077a6045e08570390f2947ca6fd4b9b067b2f1a2c8",
+    "characters": 410,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/menu/bottom_nav_menu.xml",
+    "sha256": "353d7d3e2beec1633e429fd8e30e6e4ab6122f13ac2a5c18f786da9be721ed43",
+    "characters": 660,
+    "lines": 19
+  },
+  {
+    "path": "app/src/main/res/menu/bottom_navigation_menu.xml",
+    "sha256": "86abd6a24a2cb913a2a61d491e7888c67ddaff56b1a7798c76ac5ab0ca4c52c5",
+    "characters": 657,
+    "lines": 19
+  },
+  {
+    "path": "app/src/main/res/menu/context_menu.xml",
+    "sha256": "17e73f5f3d532a166883f4ad1038e7ad8878d64a59f43bf605b403e6a738d28c",
+    "characters": 993,
+    "lines": 27
+  },
+  {
+    "path": "app/src/main/res/menu/gallery_actions.xml",
+    "sha256": "fdedef7657e2301b283e627efecf50625d879d272a01bc71e6e43d4f6ce4261e",
+    "characters": 388,
+    "lines": 4
+  },
+  {
+    "path": "app/src/main/res/menu/options_menu.xml",
+    "sha256": "9bf602cf93af0286b1f9146070d14da08d901505f97194056b9f30e6c4600c64",
+    "characters": 1051,
+    "lines": 29
+  },
+  {
+    "path": "app/src/main/res/values/colors.xml",
+    "sha256": "d4a30230dc70ea0ac7550ce21e24699eff279b3fba85bc9a7a75de455f78989a",
+    "characters": 2160,
+    "lines": 48
+  },
+  {
+    "path": "app/src/main/res/values/dimens.xml",
+    "sha256": "a8c9f3785beecb46b2fe347d519d86b111c40dccb5fe14bebc50dfe6f295eee0",
+    "characters": 1426,
+    "lines": 39
+  },
+  {
+    "path": "app/src/main/res/values/strings.xml",
+    "sha256": "9e69afec79abc00ffe9df66c0f994bb4cb18c485de11478f5f07839e7c6dd0d8",
+    "characters": 3225,
+    "lines": 79
+  },
+  {
+    "path": "app/src/main/res/values/theme_colors.xml",
+    "sha256": "4ce1a5e53e833d0b7c3c7210ff15642f738947da7153b2200474f9bc4c6ea077",
+    "characters": 271,
+    "lines": 7
+  },
+  {
+    "path": "app/src/main/res/values/theme_flags.xml",
+    "sha256": "2906d117c582e1e483dc636aab08747583669239a814db560e711dfc6f4530fa",
+    "characters": 65,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/values/themes.xml",
+    "sha256": "3f765030ee5a430ff106cccd188591c8d0421a6cd189d297af7c8f7d500f24cc",
+    "characters": 5332,
+    "lines": 111
+  },
+  {
+    "path": "app/src/main/res/values/ui_styles.xml",
+    "sha256": "5452250bfe31bfcbdb16bc4f4cfad64562c1954aef2cdeb58eca9195b18cb120",
+    "characters": 1284,
+    "lines": 26
+  },
+  {
+    "path": "app/src/main/res/values-night/colors.xml",
+    "sha256": "0fa34c4c265b0dcf0a7b54ccef4c08dd93cd8627e5db41185c7e590e020837bb",
+    "characters": 1226,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/values-night/theme_flags.xml",
+    "sha256": "93e924bc9bd7aef4e95725cd5446e4b65b05b507315e2be96fb522357fa90df2",
+    "characters": 66,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/values-night/themes.xml",
+    "sha256": "c30a9f37e6b34372e1db8c812d64a18719acf7c52c11ff2f7e5e5ed5e05c2072",
+    "characters": 12,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/values-v31/themes.xml",
+    "sha256": "9501a244e61184bfb322f145df222bdd0e7e61c6aa3fdfa57382470ab4bb6c95",
+    "characters": 584,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/color/chip_background.xml",
+    "sha256": "55a497097609ec75c9b79f3884f0cabb624319c20f5c43d5c8ddb4103ebc55ba",
+    "characters": 193,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/color/chip_text.xml",
+    "sha256": "45eed4ab7754a77479c510f38d008b1450b55065365ff0d17644f1da8e3c0422",
+    "characters": 184,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/color/input_stroke.xml",
+    "sha256": "3dd2f1e92715c17e5c93f76da29a15838bbf6319293778217f30b331510ad035",
+    "characters": 202,
+    "lines": 4
+  },
+  {
+    "path": "app/src/main/res/color/nav_colors.xml",
+    "sha256": "c0456255af7e54b053bc4691d4bb86c884d4005072bd31f50a864c7efb02a3a3",
+    "characters": 204,
+    "lines": 4
+  },
+  {
+    "path": "app/src/main/res/drawable/art_landscape.xml",
+    "sha256": "b829179fd8a20d1402841c2f58b4e245c9cce49cec441976a433cc0a6e6a3e7b",
+    "characters": 676,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/drawable/art_splash.xml",
+    "sha256": "4c8a1457bd6009e8a064597a065f1a2cb6791f4bb0f3b9ee590303417a1f6900",
+    "characters": 3691,
+    "lines": 37
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_album_card.xml",
+    "sha256": "a95407d6d436c6e040c41f3f6910b3850cc56af1f3367cfb6723361b7c303288",
+    "characters": 310,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_auth_surface.xml",
+    "sha256": "7719a003ee8556ff43cb65a1e7de9584daa8f048db6360663b40b66c14c21239",
+    "characters": 223,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_bottom_sheet.xml",
+    "sha256": "d755873a602010217e6bcb665ccfe00f69abb43d42d79ee5b6e97e5dc612e71c",
+    "characters": 281,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_chip_selected.xml",
+    "sha256": "0845e0456c81328022cba7a96274d8912a18d3f7114ad581433f7853fc08162a",
+    "characters": 228,
+    "lines": 6
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_chip_unselected.xml",
+    "sha256": "efbe9dd69af1a8a9c5f4942fa79ace2a24c708d9e8f41d29eb6508f6021506d3",
+    "characters": 239,
+    "lines": 6
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_circle_icon.xml",
+    "sha256": "c373dd0ecc0ef19b592712937c36752f962a12f7091a6b026ba68294b91e8662",
+    "characters": 194,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_circle_primary.xml",
+    "sha256": "b40d665c959c95c05b6e981fd3c0d3a01b0acbae585d1052143365750982966f",
+    "characters": 185,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_circle_white.xml",
+    "sha256": "04ad7b4110e76af64ed8437e3574360a3a5ae34a872d0fa3131457ca30f40832",
+    "characters": 185,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_dotted_border.xml",
+    "sha256": "e722cd215560bdbaf0f1ae1d3da2d011c04f54e820660aa04d1c7003fa2e5093",
+    "characters": 380,
+    "lines": 11
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_edit_text.xml",
+    "sha256": "7af1949d6a2421b3684999bc0a7fafa2570fea0ed9c425625911015000db9ef2",
+    "characters": 319,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_fab_add.xml",
+    "sha256": "ab161718e2088818174fa9f53c4521972dcb5f3cbc1c265dd57ba519d56e9981",
+    "characters": 257,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_google_button.xml",
+    "sha256": "15554517a7c4acc9896c9fb59986ef8748d42a3f8d3a2c6e3689acd74118b5c9",
+    "characters": 310,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_gradient_primary.xml",
+    "sha256": "a8bbcb13b41d8f59a8c26455c6f14e81258eb9a713598a89846a1ff21827b87f",
+    "characters": 258,
+    "lines": 7
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_handle_bar.xml",
+    "sha256": "ee4798f1ce257df08813ee1914afd80d8811e34b750922ff177b63b46ee9b106",
+    "characters": 298,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_header_rounded_bottom.xml",
+    "sha256": "433d3ffc5dc0b1168921508ced7efd5f7443dcf9f7c26fd52a6659e2476fc068",
+    "characters": 293,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_logo_tile.xml",
+    "sha256": "dcf13c8ddd1cbe7cd79eaf91b01ce3ff7ae0e2db512871a853e02dfb7cb72e73",
+    "characters": 231,
+    "lines": 6
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_notification_item.xml",
+    "sha256": "57a7d797614ea8f5b7241ed15d00d75e8631c378575c287edb34bc6f5997d665",
+    "characters": 237,
+    "lines": 6
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_otp_box.xml",
+    "sha256": "9b024a5fe1e5b28dbff7d7d726383bb73b74b9d0d65a96c0ea0bcf8bc5dcfa8e",
+    "characters": 674,
+    "lines": 17
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_photo_overlay.xml",
+    "sha256": "59191f55472873f5e47796b16fa06126be3895ac4001091fb1eedb2547b30471",
+    "characters": 266,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_rounded_primary.xml",
+    "sha256": "e7ebe5156acbacc9bf67586e4a48bd889c5e9a0142d3a89fced9bf0ef08086b4",
+    "characters": 228,
+    "lines": 6
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_rounded_white.xml",
+    "sha256": "e02bc11df250a0ffef565a52bfb7dab69c0ef419c25d5009e00fec422fceac60",
+    "characters": 228,
+    "lines": 6
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_search_bar.xml",
+    "sha256": "b78b322758196ffc20aebbbdc4fb2c64e3105626ce330ffc7111132ab51346ee",
+    "characters": 256,
+    "lines": 6
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_selection_number.xml",
+    "sha256": "f038d1ed15e8254274a517d3819a3162ad87bc7da455a4c16231b3fc5099812e",
+    "characters": 250,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_settings_item.xml",
+    "sha256": "2691d4989ac0fcd3a120545354724a266fdd60f38286d14cb3d003ff94572270",
+    "characters": 287,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_settings_row.xml",
+    "sha256": "0896fb101625f4d6942cad7b171e3d2acebfea9acef8693d738e4cd9d3bf2ce2",
+    "characters": 180,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_splash_gradient.xml",
+    "sha256": "863b98160c0837d30f990afd41817a7f746ab40e20ee06bfc2f3af9a371fd72d",
+    "characters": 330,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_trash_item.xml",
+    "sha256": "7af1949d6a2421b3684999bc0a7fafa2570fea0ed9c425625911015000db9ef2",
+    "characters": 319,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_video_duration.xml",
+    "sha256": "40e4551697831fad4e44981b4dd3d3ce5783782f239f2597c55000cd62da2cd5",
+    "characters": 359,
+    "lines": 11
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_about.xml",
+    "sha256": "b2f2c91fea147fee0509dd02bcb01c4f6c7cfe65c1fa943630f4ce84c79f8416",
+    "characters": 435,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_add.xml",
+    "sha256": "3e4b9a73f052243e0c1e8dc7febc99c30601a52bc4a68ab93f6febdaf678ec48",
+    "characters": 343,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_adjust.xml",
+    "sha256": "77d13f5e73929e45de2f52feb32021fd95c2aaada6b2a23088a8ffcfea03029b",
+    "characters": 391,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_album.xml",
+    "sha256": "6f62639ef23fcad1a18f5c22349b4beaa855e89a81989a7f9c148f6f3cfaf887",
+    "characters": 501,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_albums.xml",
+    "sha256": "dbda1cd4a2615c32d3d7d7d4ca68a384e140088b93a0db07a4697eadfa0e51c4",
+    "characters": 469,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_app_logo.xml",
+    "sha256": "1f57acdd3472d78d1051a6807f6dbd825d48aab86d15d90e9880338e21c5605d",
+    "characters": 2196,
+    "lines": 28
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_arrow_back.xml",
+    "sha256": "b6db8fe202b9e6bc6ebb6556e4644b47b9567ba1413b824144e04c145721cb56",
+    "characters": 370,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_back.xml",
+    "sha256": "1c5752797266cd23490cbda1e0ea05c0b9472da3ffdc817ef8b337473e173664",
+    "characters": 331,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_calendar.xml",
+    "sha256": "d29c9288989ec174d18394cda2e5d793a1940c2b8f15b22fd26e80693fc7ca39",
+    "characters": 415,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_camera.xml",
+    "sha256": "55bec187554a5454ac420f008ab1203b1e1d95c75803bd77247eb35f48321185",
+    "characters": 510,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_checkbox_checked.xml",
+    "sha256": "c9667d3853fa3d51ac42db200d402efa149cb14b5fa122ce8a1c5500af51f1ad",
+    "characters": 257,
+    "lines": 8
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_checkbox_unchecked.xml",
+    "sha256": "7ee4a33a5e14b33b6909cd79a931d5ab5c4164bbab999f01f3a8020b996610c8",
+    "characters": 332,
+    "lines": 11
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_chevron_right.xml",
+    "sha256": "5066fd236c1ec5c05d41474c3e551788aae4ba654dfccc2569220d3407664f1f",
+    "characters": 302,
+    "lines": 4
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_close.xml",
+    "sha256": "0c888be2f31933b51ce8d00d29c95ec58ea434bd7397110189b783cb42fe08f3",
+    "characters": 370,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_cloud_done.xml",
+    "sha256": "a5aeb46e4d9268724837f5c1a49914d7bf172b781bafe664b70b298d07b9816f",
+    "characters": 488,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_cloud_upload.xml",
+    "sha256": "229399e7f6ffa95ade21cd39d239b2df8fddb2d19c1a6d812dabc7cbe2fb6560",
+    "characters": 496,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_copy.xml",
+    "sha256": "fb2d3474dece82cdb4b1c2a13fa5c9114fdb4b46e99e57bc2357109643bcff2e",
+    "characters": 412,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_crop.xml",
+    "sha256": "1e837096adbe128fb5f8c36d8ba8d053ff5a04ccfdfd573a5cd18308164f9c13",
+    "characters": 363,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_dark_mode.xml",
+    "sha256": "7d4591b53be8afc77a762c6f2ed0096deef529e6fc5b64b0f27342bb66c33031",
+    "characters": 342,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_delete.xml",
+    "sha256": "bad4e45a881a9cb7a82b28919e8418fc4d1e9836063d03c451e3d6c190909fe3",
+    "characters": 391,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_device.xml",
+    "sha256": "87947134b6311c5982117f301af3422e214cdd095ba4964ae7ea792b8d104766",
+    "characters": 404,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_download.xml",
+    "sha256": "509f2b8b0fce93cd1c5e174f93a1c8bf5c97b5f2493786a059a04a0aa18cfa8d",
+    "characters": 455,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_drive.xml",
+    "sha256": "57ec458fd0be96953c7c33899f9dab62be8ab0c5a6d39819c7e70cce77dca75c",
+    "characters": 348,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_edit.xml",
+    "sha256": "0be84b9afbd33f4885a914d302adb309e0b51efd2ec3c8b476624517bf5ec577",
+    "characters": 474,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_email.xml",
+    "sha256": "cbf9b11f564810ecf47d8b0f67f668aacdab9b2961c131731dd3f8b741f732b6",
+    "characters": 439,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_facebook.xml",
+    "sha256": "c04aa92885cbc1592ecbbb34ea60748b3fcf7347cb08f0f847e9285f57d9c897",
+    "characters": 517,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_favorite.xml",
+    "sha256": "17a4d6e0a7c7751c8625f6177e1c07282cdd448857521f668ff17555d7929bd9",
+    "characters": 448,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_favorite_filled.xml",
+    "sha256": "17a4d6e0a7c7751c8625f6177e1c07282cdd448857521f668ff17555d7929bd9",
+    "characters": 448,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_favorite_outline.xml",
+    "sha256": "e387f9713c07a5fb47512a420be709a833d7d205e1d485d30d8cc49b8310d12f",
+    "characters": 667,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_file_type.xml",
+    "sha256": "715edff3e45424558f866201d847a72b2a1bb06411a8080c667c8350f40edad1",
+    "characters": 407,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_filter.xml",
+    "sha256": "2e3d4e8488915dfc66ccf9442ed75097793bca5966bef7343b1f36061b52383c",
+    "characters": 430,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_gmail.xml",
+    "sha256": "3a22f9bb516c7551cc7847ccbe659b6c53685ba8d20a93b0200da66344f63333",
+    "characters": 459,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_google.xml",
+    "sha256": "be07e7d93f8401bc3db81531ee39a41c50903c88c7be3a797fbd4bb01e9d15e5",
+    "characters": 1125,
+    "lines": 22
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_help.xml",
+    "sha256": "b2e69f7462c229682487771748f051ff132dfbd908377d9f560b68b920f515c7",
+    "characters": 615,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_image_size.xml",
+    "sha256": "ef72ba33d8a17953f0b643d44e0ec5885a3ec3e632cc32a4f3624288b5405116",
+    "characters": 424,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_info.xml",
+    "sha256": "1cd532b3414b6aaa75d6608cc1327ade48e2faa2e2c9b923692ead2cfdc9c9be",
+    "characters": 407,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_instagram.xml",
+    "sha256": "80228cf2f0cb806d108dc3628609a80e4bfe9f27085c79399a85c4dc02b51ec3",
+    "characters": 1345,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_language.xml",
+    "sha256": "aa2a35c62418c3c373a7546f85ca38748e8034557330507ab77f450daa9c3824",
+    "characters": 1203,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_launcher_background.xml",
+    "sha256": "6ac07ea52e34bbf62e647e7d52ac13df2a83464908507ba8aa71cc51965e1470",
+    "characters": 136,
+    "lines": 4
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+    "sha256": "ba8f3de37e9d5b0293a17b43c629dde6f5a93b5db3208729530b9ce0d8091224",
+    "characters": 153,
+    "lines": 2
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_location.xml",
+    "sha256": "3777d51ac10bb483fa51c84e5a6c40beb4ad640941be9437bd278637f22ceca6",
+    "characters": 438,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_lock.xml",
+    "sha256": "a4bdc8cce0a75dea8e8d3b4c791275b64356b3515a98494b9e8478af3e9f72be",
+    "characters": 568,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_logout.xml",
+    "sha256": "eebb281d65f7c3e41341627d42570b95f597bfa5a074304d29743595d597c091",
+    "characters": 384,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_messages.xml",
+    "sha256": "016f778f137138e30818764ede26ff82f44345d92a88cfce6b84833fd409be74",
+    "characters": 584,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_messenger.xml",
+    "sha256": "a004afb230043eb7c4770787fd2e968024e8b85698eee109237a88f5e5892a0a",
+    "characters": 493,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_more_vert.xml",
+    "sha256": "859ed81765c4d105e25000f442c7cbc60876110c84039b1920ed8ceab0c11868",
+    "characters": 488,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_notification.xml",
+    "sha256": "0557f3d6f04f8c08aa9e3a9b5d9fbfedfe10292e45ecbb0b58ce7038020a509a",
+    "characters": 541,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_person.xml",
+    "sha256": "8f9a76ce72a6ff7a129b4cd8c946119cd61e4563a923c85b4271ad1895eae027",
+    "characters": 392,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_photo.xml",
+    "sha256": "a57a49fa7ec34001c9d5568f867c8d8d76ba61f2756eaf84c12830423abf79b7",
+    "characters": 443,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_photos.xml",
+    "sha256": "7a553a5207661b1260ae497b6b1a870688038c4c6c42c084d4ec2d0ed06e6476",
+    "characters": 461,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_play_circle.xml",
+    "sha256": "e7c31e3ccb479fa63cc98395db197a06d9bfce93fc6fb8f59559264c6d80da9e",
+    "characters": 360,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_privacy.xml",
+    "sha256": "5a143c2a96d612ca0a3a690f03d861e6ecd0b28493a29b9972c86b71832b0342",
+    "characters": 398,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_profile.xml",
+    "sha256": "775bad2dcc8ae1cb419cf03dcf0ba7f87042fdb4cb73e2024b6d8b6e9346be43",
+    "characters": 449,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_restore.xml",
+    "sha256": "22f9a755ae93fcca33a0d17b484aeb9a47d368c1771f69abc2d7bcc0eb7d0005",
+    "characters": 381,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_rotate.xml",
+    "sha256": "0210a7c89ac173f735c4694a5d03745bf15e9a86033cf892baac65a119a7dd08",
+    "characters": 515,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_search.xml",
+    "sha256": "163a611d802ebf7745dd495ec019b267a7a24ae03e0e6f9d6d325ce98386d428",
+    "characters": 554,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_select_all.xml",
+    "sha256": "5afec88116f206a07c016ebcd9ab92761392880ac23779b1476f45d21c34a745",
+    "characters": 569,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_settings.xml",
+    "sha256": "2ded89f4cce9fbed6f37d41e6ef95bb856f3a031a1af32f88c0f95539a0fd1ef",
+    "characters": 1226,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_share.xml",
+    "sha256": "a930242b1e8786fb9250091603bd2e7b25cc498ff4e652be7d342656ffe6cbb5",
+    "characters": 740,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_share_nearby.xml",
+    "sha256": "26718f6e2b65dfdfdd972c18981521d08ee379afe5770dbc7672532b8a56d3f6",
+    "characters": 484,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_sort.xml",
+    "sha256": "1e53d07c0066b7fd413cd1dc0ac5566d3e98c4284ae91c13605dfab5f7e8a0d6",
+    "characters": 340,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_sync.xml",
+    "sha256": "e2ea428da3b575d0b3a3a7c9c93cbf1f2b4790b5a387e82cbeb38aa648598d79",
+    "characters": 514,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_text.xml",
+    "sha256": "96085ea4a1cc0eb40a58612eccfe52442152a1458843843a56628569edf3bb28",
+    "characters": 294,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_video.xml",
+    "sha256": "9f16281126329e151f0860241e4e5a45209a852351878340d7b7ed4dd532dc42",
+    "characters": 388,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_visibility.xml",
+    "sha256": "d9313100e646efed09c8d5a953a77635d8ca5e802417fa8f5563c9f51348d428",
+    "characters": 541,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_visibility_off.xml",
+    "sha256": "ce969ef51341fe48463c201ebe6fb08eae0e916a34a8ba37f717c9a8cd30ee9d",
+    "characters": 898,
+    "lines": 10
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_wifi.xml",
+    "sha256": "dd0037c985688dc7753ec7c7a0be23e05827d24abe139c95067118d2e6419ece",
+    "characters": 416,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_zalo.xml",
+    "sha256": "1c0e5de79a020aedface8d0b604a46662b50317c24388c6706c257ddb7db10e2",
+    "characters": 469,
+    "lines": 9
+  },
+  {
+    "path": "app/src/main/res/drawable-night/bg_auth_surface.xml",
+    "sha256": "7719a003ee8556ff43cb65a1e7de9584daa8f048db6360663b40b66c14c21239",
+    "characters": 223,
+    "lines": 1
+  },
+  {
+    "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "sha256": "820141a12f6dff5892e9cc930546f1db894f9ce513c5938ed0b7e4af397b191e",
+    "characters": 255,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "sha256": "820141a12f6dff5892e9cc930546f1db894f9ce513c5938ed0b7e4af397b191e",
+    "characters": 255,
+    "lines": 5
+  },
+  {
+    "path": "app/src/main/res/xml/backup_rules.xml",
+    "sha256": "6cf1a27e6807b1d24e41d3fbe7ddc1bfe1f42226027964f6eaf477d71b43b283",
+    "characters": 478,
+    "lines": 13
+  },
+  {
+    "path": "app/src/main/res/xml/data_extraction_rules.xml",
+    "sha256": "cb1fc47ab4a984530ed60e0e6ee638929c3038290e7e7e0b4b03a3a30fbe7381",
+    "characters": 551,
+    "lines": 19
+  },
+  {
+    "path": "app/src/main/res/xml/file_paths.xml",
+    "sha256": "57344843db37de76bf50bfb6950c42e02c38d8b07850c97cdcba1de64dd3efa0",
+    "characters": 157,
+    "lines": 1
+  }
+]

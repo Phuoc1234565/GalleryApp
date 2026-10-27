@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screenRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="56dp" app:title="Tạo album" app:titleTextColor="?android:attr/textColorPrimary" app:navigationIcon="@drawable/ic_arrow_back" app:titleTextAppearance="@style/GalleryToolbarTitle" app:navigationIconTint="@color/text_primary"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical" android:paddingHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:hint="Tên album" style="@style/CustomEditText" app:endIconMode="none">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/albumName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chọn ảnh cho câu chuyện mới của bạn" android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:paddingVertical="8dp" android:fontFamily="sans-serif"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="14sp" android:paddingVertical="8dp" android:id="@+id/status" android:textColor="@color/text_secondary" android:fontFamily="sans-serif" android:visibility="gone"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/grid" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:clipToPadding="false" android:paddingBottom="16dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/create" style="@style/PrimaryButton" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp" android:text="Tạo album" android:letterSpacing="0"/>
+    </LinearLayout>
+</LinearLayout>

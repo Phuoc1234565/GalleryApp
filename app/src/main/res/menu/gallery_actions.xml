@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/galleryFilter" android:title="Bộ lọc" android:icon="@drawable/ic_filter" app:showAsAction="always"/>
+    <item android:id="@+id/galleryOptions" android:title="Tùy chọn" android:icon="@drawable/ic_more_vert" app:showAsAction="always"/>
+</menu>

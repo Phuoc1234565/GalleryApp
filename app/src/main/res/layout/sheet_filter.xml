@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screenRoot" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_bottom_sheet" android:padding="8dp">
+    <View android:layout_width="36dp" android:layout_height="4dp" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:background="@drawable/bg_handle_bar"/>
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="56dp" app:title="Bộ lọc" app:titleTextAppearance="@style/GalleryToolbarTitle" app:titleTextColor="@color/text_primary" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="@color/text_primary"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="12dp">
+            <com.google.android.material.button.MaterialButton android:id="@+id/newest" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Mới nhất" app:icon="@drawable/ic_calendar"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/oldest" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Cũ nhất" app:icon="@drawable/ic_sort"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/size" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Kích thước" app:icon="@drawable/ic_image_size"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/type" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Tên A → Z" app:icon="@drawable/ic_file_type"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screenRoot" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_bottom_sheet" android:padding="8dp">
+    <View android:layout_width="36dp" android:layout_height="4dp" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:background="@drawable/bg_handle_bar"/>
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="56dp" app:title="Tùy chọn" app:titleTextAppearance="@style/GalleryToolbarTitle" app:titleTextColor="@color/text_primary" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="@color/text_primary"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="12dp">
+            <com.google.android.material.button.MaterialButton android:id="@+id/select" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Chọn nhiều" app:icon="@drawable/ic_select_all"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/addAlbum" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Thêm vào album" app:icon="@drawable/ic_album"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/hide" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Ẩn các mục đã chọn" app:icon="@drawable/ic_visibility_off"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/hiddenMedia" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Ảnh và video đã ẩn" app:icon="@drawable/ic_visibility_off"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/settings" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Cài đặt" app:icon="@drawable/ic_settings"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/help" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Trợ giúp" app:icon="@drawable/ic_help"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

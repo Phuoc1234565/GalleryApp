@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_bottom_sheet" android:padding="12dp">
+    <View android:layout_width="36dp" android:layout_height="4dp" android:layout_gravity="center_horizontal" android:layout_marginVertical="8dp" android:background="@drawable/bg_handle_bar"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tùy chọn album" android:textSize="20sp" android:textColor="@color/text_primary" android:fontFamily="sans-serif" android:padding="16dp"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/select" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Chọn nhiều" app:icon="@drawable/ic_select_all"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/addPhotos" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Thêm ảnh" app:icon="@drawable/ic_album"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/renameAlbum" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Đổi tên" app:icon="@drawable/ic_edit"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/removeSelected" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Bỏ ảnh đã chọn khỏi album" app:icon="@drawable/ic_delete"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/deleteAlbum" style="@style/GalleryRow" android:layout_width="match_parent" android:layout_height="56dp" android:text="Xóa album" app:icon="@drawable/ic_delete" android:textColor="@color/danger" app:iconTint="@color/danger"/>
+</LinearLayout>
